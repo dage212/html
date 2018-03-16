@@ -1,0 +1,1502 @@
+{
+    code: "5000",
+        message: "成功",
+    data: {
+    list: [ ],
+        graph: {
+        relationList: [],
+            nodeList: [
+            {
+                regCapital: 0,
+                endDate: "2009-12-30",
+                entityStatus: "注销企业",
+                entityName: "汕头市联合信用服务有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "5443409",
+                startDate: "2003-01-23"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "渤海财产保险股份有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "10626209",
+                startDate: "2005-09-28"
+            },
+            {
+                regCapital: 0,
+                endDate: "2010-06-11",
+                entityStatus: "注销企业",
+                entityName: "天津市正方通讯技术有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "24420467",
+                startDate: "2000-06-15"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "联合赤道环境评价有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "16567291",
+                startDate: "2015-12-29"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "弓劲梅",
+                entityType: "PERSON",
+                main: false,
+                id: "52606505",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2010-05-05",
+                entityStatus: "吊销企业",
+                entityName: "天津中诚资信评估有限公司西安分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "15155178",
+                startDate: "2005-11-01"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "刘文良",
+                entityType: "PERSON",
+                main: false,
+                id: "114606298",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "马文洛",
+                entityType: "PERSON",
+                main: false,
+                id: "109270669",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津贵金属交易所有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "10517424",
+                startDate: "2008-12-30"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "杨雪屏",
+                entityType: "PERSON",
+                main: false,
+                id: "55575361",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "戴德乐",
+                entityType: "PERSON",
+                main: false,
+                id: "63612888",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津泰达集团有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "4317266",
+                startDate: "1994-11-28"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "何百川",
+                entityType: "PERSON",
+                main: false,
+                id: "86027828",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2002-11-20",
+                entityStatus: "吊销企业",
+                entityName: "河南中诚信投资者服务有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "18655499",
+                startDate: "1995-09-27"
+            },
+            {
+                regCapital: 0,
+                endDate: "2006-03-26",
+                entityStatus: "注销企业",
+                entityName: "陕西时代金币有限公司营业部",
+                entityType: "COMPANY",
+                main: false,
+                id: "41789802",
+                startDate: "2004-09-06"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "其他",
+                entityName: "浙江省信用与担保协会",
+                entityType: "COMPANY",
+                main: false,
+                id: "47126742",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "卢志永",
+                entityType: "PERSON",
+                main: false,
+                id: "55559764",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "李琳",
+                entityType: "PERSON",
+                main: false,
+                id: "75684254",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "王松",
+                entityType: "PERSON",
+                main: false,
+                id: "48816117",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2013-07-01",
+                entityStatus: "吊销企业",
+                entityName: "广东中诚信商务顾问有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "27028354",
+                startDate: "1997-03-25"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "芮云风",
+                entityType: "PERSON",
+                main: false,
+                id: "48816118",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "北京昆湖天辰投资管理中心（有限合伙）",
+                entityType: "COMPANY",
+                main: false,
+                id: "30377936",
+                startDate: "2013-09-04"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "联合信用征信股份有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "27258559",
+                startDate: "2014-09-29"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "其他",
+                entityName: "重庆市小额贷款公司协会",
+                entityType: "COMPANY",
+                main: false,
+                id: "43624377",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2004-05-09",
+                entityStatus: "吊销企业",
+                entityName: "甘肃北方中诚信投资服务有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "9231278",
+                startDate: "1997-01-09"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "海南椰都联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "5997181",
+                startDate: "2000-08-02"
+            },
+            {
+                regCapital: 0,
+                endDate: "2005-12-13",
+                entityStatus: "注销企业",
+                entityName: "山西信保联合资信评估有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "17520428",
+                startDate: "2001-08-25"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "北京昆湖锦绣投资管理中心（有限合伙）",
+                entityType: "COMPANY",
+                main: false,
+                id: "14771403",
+                startDate: "2013-09-04"
+            },
+            {
+                regCapital: 0,
+                endDate: "2009-03-26",
+                entityStatus: "吊销企业",
+                entityName: "天津中诚资信评估有限公司德阳分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "35141683",
+                startDate: "2006-03-23"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "恒安标准人寿保险有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "14373872",
+                startDate: "2003-12-01"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "宁夏黄河远东国际招标有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "3461144",
+                startDate: "2010-01-28"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "顾洪良",
+                entityType: "PERSON",
+                main: false,
+                id: "91689030",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "王少波",
+                entityType: "PERSON",
+                main: false,
+                id: "85959979",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "沈清",
+                entityType: "PERSON",
+                main: false,
+                id: "86519325",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津市津能投资公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "13948643",
+                startDate: "1988-09-23"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "常丽娟",
+                entityType: "PERSON",
+                main: false,
+                id: "63640051",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2011-01-21",
+                entityStatus: "注销企业",
+                entityName: "天津津泰莱投资有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "41015371",
+                startDate: "2009-01-07"
+            },
+            {
+                regCapital: 0,
+                endDate: "2009-02-05",
+                entityStatus: "吊销企业",
+                entityName: "天津中诚资信评估有限公司安徽分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "19773457",
+                startDate: "2006-04-05"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "李振宇",
+                entityType: "PERSON",
+                main: false,
+                id: "94827930",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "四川联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "1144367",
+                startDate: "2015-10-09"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "赵金辉",
+                entityType: "PERSON",
+                main: false,
+                id: "55574894",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "郭其阳",
+                entityType: "PERSON",
+                main: false,
+                id: "94827929",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "刁锋",
+                entityType: "PERSON",
+                main: false,
+                id: "55500913",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "联合信用投资咨询有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "7272236",
+                startDate: "1997-12-12"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "其他",
+                entityName: "天津市财政投资管理中心",
+                entityType: "COMPANY",
+                main: false,
+                id: "45320441",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2007-01-26",
+                entityStatus: "注销企业",
+                entityName: "陕西时代金币有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "34992990",
+                startDate: "2003-03-25"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "张友雄",
+                entityType: "PERSON",
+                main: false,
+                id: "72860955",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "迁出",
+                entityName: "华星商用科技投资发展有限责任公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "9704410",
+                startDate: "2000-01-14"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "马新疆",
+                entityType: "PERSON",
+                main: false,
+                id: "55705119",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "梅文",
+                entityType: "PERSON",
+                main: false,
+                id: "55562269",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "顾洪良",
+                entityType: "PERSON",
+                main: false,
+                id: "110433990",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "其他",
+                entityName: "惠誉信用评级有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "47334785",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2009-08-11",
+                entityStatus: "吊销企业",
+                entityName: "天津中诚资信评估有限公司佛山分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "33459110",
+                startDate: "2005-12-21"
+            },
+            {
+                regCapital: 0,
+                endDate: "2013-12-09",
+                entityStatus: "注销企业",
+                entityName: "泰达荷宝（天津）股权管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "6661181",
+                startDate: "2009-05-07"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津市联合信用科技发展有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "39742468",
+                startDate: "2014-12-11"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "厦门联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "28696559",
+                startDate: "2010-12-28"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津市国有资产经营有限责任公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "19992431",
+                startDate: "2001-12-18"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "青海联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "12025566",
+                startDate: "2011-05-20"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "上海联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "21903908",
+                startDate: "2002-10-21"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津市仁翔商贸有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "9002979",
+                startDate: "2010-10-12"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "张志军",
+                entityType: "PERSON",
+                main: false,
+                id: "94407374",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2005-09-01",
+                entityStatus: "注销企业",
+                entityName: "天津泰安保险经纪有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "17379175",
+                startDate: "2003-08-28"
+            },
+            {
+                regCapital: 0,
+                endDate: "2012-02-21",
+                entityStatus: "吊销企业",
+                entityName: "陕西隆晟环境工程有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "32581249",
+                startDate: "2005-03-18"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "其他",
+                entityName: "重庆市融资担保业协会",
+                entityType: "COMPANY",
+                main: false,
+                id: "43590123",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2006-10-16",
+                entityStatus: "吊销企业",
+                entityName: "河源市威达投资有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "4768316",
+                startDate: "2002-06-26"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津国投滨海小额贷款有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "27749599",
+                startDate: "2009-04-28"
+            },
+            {
+                regCapital: 0,
+                endDate: "2009-01-20",
+                entityStatus: "注销企业",
+                entityName: "天津中诚资信评估有限公司河北分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "38998573",
+                startDate: "2005-09-19"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "黄悦",
+                entityType: "PERSON",
+                main: false,
+                id: "53176917",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "联合资信评估有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "26788583",
+                startDate: "2000-07-17"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津泰达投资控股有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "31061080",
+                startDate: "1985-05-28"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "深圳联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "26360849",
+                startDate: "2007-03-09"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "陈苏苏",
+                entityType: "PERSON",
+                main: false,
+                id: "48874090",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "其他",
+                entityName: "天津经济技术开发区财政局",
+                entityType: "COMPANY",
+                main: false,
+                id: "45319227",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "联合信用评级有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "3247544",
+                startDate: "2002-05-10"
+            },
+            {
+                regCapital: 0,
+                endDate: "2006-05-23",
+                entityStatus: "注销企业",
+                entityName: "陕西世纪金币网络科技有限公司分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "27854371",
+                startDate: "2004-06-02"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津津融投资服务集团有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "38955736",
+                startDate: "2013-07-26"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津鑫誉诚商务信息服务有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "37494704",
+                startDate: "2010-11-04"
+            },
+            {
+                regCapital: 0,
+                endDate: "2006-11-19",
+                entityStatus: "吊销企业",
+                entityName: "天津瀚康科技发展有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "24517627",
+                startDate: "2005-06-16"
+            },
+            {
+                regCapital: 0,
+                endDate: "2001-11-02",
+                entityStatus: "注销企业",
+                entityName: "甘肃美净清洗工程有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "36487869",
+                startDate: "1997-11-12"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "吴玲",
+                entityType: "PERSON",
+                main: false,
+                id: "55685056",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "李仲援",
+                entityType: "PERSON",
+                main: false,
+                id: "74229752",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "中招联合信息股份有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "2897594",
+                startDate: "2015-09-11"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "张东莲",
+                entityType: "PERSON",
+                main: false,
+                id: "107956729",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "海南中诚信证券评估有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "13978956",
+                startDate: "1993-07-07"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "渤海证券股份有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "3603626",
+                startDate: "1988-03-01"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "林海青",
+                entityType: "PERSON",
+                main: false,
+                id: "55646412",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "万辉红",
+                entityType: "PERSON",
+                main: false,
+                id: "62624550",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: true,
+                id: "13626961",
+                startDate: "2000-01-14"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "陕西星中龙文化发展有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "13256298",
+                startDate: "2010-07-22"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "韩博瑞",
+                entityType: "PERSON",
+                main: false,
+                id: "64029043",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "王少波",
+                entityType: "PERSON",
+                main: false,
+                id: "55682803",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "张力",
+                entityType: "PERSON",
+                main: false,
+                id: "72264935",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "庄建华",
+                entityType: "PERSON",
+                main: false,
+                id: "86277257",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "陈祎",
+                entityType: "PERSON",
+                main: false,
+                id: "108236765",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "张林",
+                entityType: "PERSON",
+                main: false,
+                id: "49485148",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "李萌",
+                entityType: "PERSON",
+                main: false,
+                id: "76705058",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "白源清",
+                entityType: "PERSON",
+                main: false,
+                id: "70609285",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "宁夏联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "40852443",
+                startDate: "2013-08-23"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "吴泠",
+                entityType: "PERSON",
+                main: false,
+                id: "55368954",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2008-10-15",
+                entityStatus: "吊销企业",
+                entityName: "天津中诚资信评估有限公司重庆分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "29986174",
+                startDate: "2005-12-13"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "重庆公信达信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "30332278",
+                startDate: "2013-11-19"
+            },
+            {
+                regCapital: 0,
+                endDate: "2013-07-25",
+                entityStatus: "注销企业",
+                entityName: "天津国际投资有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "6938066",
+                startDate: "2002-06-26"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津信托有限责任公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "3772292",
+                startDate: "1986-09-23"
+            },
+            {
+                regCapital: 0,
+                endDate: "2006-08-08",
+                entityStatus: "吊销企业",
+                entityName: "天津中诚资信评估有限公司山西分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "18805408",
+                startDate: "2005-06-30"
+            },
+            {
+                regCapital: 0,
+                endDate: "2009-06-29",
+                entityStatus: "注销企业",
+                entityName: "天津中诚资信评估有限公司辽宁分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "22109073",
+                startDate: "2006-04-03"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "詹文良",
+                entityType: "PERSON",
+                main: false,
+                id: "70656246",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2004-02-27",
+                entityStatus: "吊销企业",
+                entityName: "深圳市华南音像有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "956367",
+                startDate: "1999-10-10"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "钱进",
+                entityType: "PERSON",
+                main: false,
+                id: "55724948",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "李晨",
+                entityType: "PERSON",
+                main: false,
+                id: "55680662",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2002-12-18",
+                entityStatus: "吊销企业",
+                entityName: "宁夏联合资信咨询有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "14752038",
+                startDate: "2001-02-15"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "钟玲玲",
+                entityType: "PERSON",
+                main: false,
+                id: "55329668",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2007-12-14",
+                entityStatus: "注销企业",
+                entityName: "联合资信评估有限公司天津分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "33417780",
+                startDate: "2000-09-29"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "黑龙江联合信用评级有限责任公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "23994021",
+                startDate: "2004-04-23"
+            },
+            {
+                regCapital: 0,
+                endDate: "2002-02-26",
+                entityStatus: "吊销企业",
+                entityName: "河南中诚信信用评估有限责任公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "21456524",
+                startDate: "1999-10-20"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "成都高投盈创动力投资发展有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "40519333",
+                startDate: "2011-09-01"
+            },
+            {
+                regCapital: 0,
+                endDate: "2014-11-03",
+                entityStatus: "注销企业",
+                entityName: "泰达荷宝（天津）资产管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "32324924",
+                startDate: "2009-03-19"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "西安佳缘茶艺有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "42048595",
+                startDate: "2008-06-03"
+            },
+            {
+                regCapital: 0,
+                endDate: "2007-03-26",
+                entityStatus: "注销企业",
+                entityName: "天津市全网科技投资有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "6654134",
+                startDate: "2000-02-24"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "陶玲琴",
+                entityType: "PERSON",
+                main: false,
+                id: "96672535",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2011-10-12",
+                entityStatus: "吊销企业",
+                entityName: "北京中融科博投资咨询有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "7477159",
+                startDate: "2008-03-17"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "泰达宏利基金管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "20397280",
+                startDate: "2002-06-06"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "李广聪",
+                entityType: "PERSON",
+                main: false,
+                id: "63911958",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2012-03-09",
+                entityStatus: "吊销企业",
+                entityName: "天津中诚资信评估有限公司江苏分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "11611242",
+                startDate: "2006-02-22"
+            },
+            {
+                regCapital: 0,
+                endDate: "2007-12-26",
+                entityStatus: "吊销企业",
+                entityName: "天津市江河源工贸发展有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "4252829",
+                startDate: "1996-04-25"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "杭州联合资信评估咨询有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "41488036",
+                startDate: "2006-07-24"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津市泰达国际控股（集团）有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "23005058",
+                startDate: "2007-12-11"
+            },
+            {
+                regCapital: 0,
+                endDate: "2007-08-02",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津市融顺商贸有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "1894396",
+                startDate: "2006-02-23"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "迁出",
+                entityName: "泰达宏利基金管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "9202284",
+                startDate: "2002-06-06"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "吴金善",
+                entityType: "PERSON",
+                main: false,
+                id: "94826052",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津滨海柜台交易市场股份公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "40042113",
+                startDate: "2010-08-12"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "周晓辉",
+                entityType: "PERSON",
+                main: false,
+                id: "94826050",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "李信宏",
+                entityType: "PERSON",
+                main: false,
+                id: "94826051",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津渤海国有资产经营管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "38273709",
+                startDate: "2008-05-28"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "刘慧敏",
+                entityType: "PERSON",
+                main: false,
+                id: "94826048",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "邵立强",
+                entityType: "PERSON",
+                main: false,
+                id: "94826049",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "许宁",
+                entityType: "PERSON",
+                main: false,
+                id: "55574183",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2009-03-31",
+                entityStatus: "迁出",
+                entityName: "联合信用管理有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "180200",
+                startDate: "2000-01-14"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "阎志文",
+                entityType: "PERSON",
+                main: false,
+                id: "53643480",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2013-07-16",
+                entityStatus: "吊销企业",
+                entityName: "四川新华联合资信评估有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "39315132",
+                startDate: "2003-03-17"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津市中诺典当行有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "6175669",
+                startDate: "2000-02-17"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "海南贝辉钱币有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "26291327",
+                startDate: "1999-04-21"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "西安文苑科技有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "39484328",
+                startDate: "2003-11-21"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "王杰瑾",
+                entityType: "PERSON",
+                main: false,
+                id: "71142601",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "2008-02-22",
+                entityStatus: "吊销企业",
+                entityName: "天津中诚资信评估有限公司贵州分公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "1498081",
+                startDate: "2006-02-13"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "邹涛",
+                entityType: "PERSON",
+                main: false,
+                id: "54005696",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "徐琴波",
+                entityType: "PERSON",
+                main: false,
+                id: "88675763",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "在营（开业）企业",
+                entityName: "天津泰达股份有限公司",
+                entityType: "COMPANY",
+                main: false,
+                id: "11349591",
+                startDate: "1981-08-20"
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "程丽英",
+                entityType: "PERSON",
+                main: false,
+                id: "74959244",
+                startDate: ""
+            },
+            {
+                regCapital: 0,
+                endDate: "",
+                entityStatus: "个人",
+                entityName: "池平",
+                entityType: "PERSON",
+                main: false,
+                id: "107895698",
+                startDate: ""
+            }
+        ]
+    }
+}
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信用统计 - 统计概况</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/credit_statistics.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="head_box">
+        <div class="head_logo"><span>北京市文创企业信用服务平台</span></div>
+        <ul class="head_menu">
+            <li ><a href="../../home.html">首页</a></li>
+            <li><a href="./info_search.html">信用查询</a></li>
+            <li><a href="./company_list.html">行业名单</a></li>
+            <li class=" monitor_menu">
+                <a href="javascript:void(0)">监控跟踪&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./monitor_follow.html">监控概览</a></li>
+                    <li class="menu_list"><a href="./important_things.html">重大事项</a></li>
+                    <li class="menu_list"><a href="./monitor_list.html">监控名单</a></li>
+                </ul>
+            </li>
+            <li class="infor_menu active">
+                <a href="#">信用统计&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./credit_statistics.html">统计概况</a></li>
+                    <li class="menu_list"><a href="./credit_score.html">评分分布</a></li>
+                </ul>
+            </li>
+            <li ><a href="./company_select.html">企业优选</a></li>
+            <li ><a href="./credit_map.html">信用地图</a></li>
+        </ul>
+        <ul class="login_out">
+            <li><a href="./user_sys.html"><img class="login_png" src="../images/user.png" /></a></li>
+            <li><a href="#"><img class="logout_png" src="../images/quit.png"/></a></li>
+        </ul>
+    </div>
+</header>
+<section class="section">
+    <nav class="bread">
+        <span class="crumb_one">当前位置</span>&nbsp;:&nbsp;<a class="crumb_two" href="#">首页</a>&nbsp;>&nbsp;<a class="crumb_three" href="#">统计概况</a>
+    </nav>
+    
+    <article>
+    	<div class="tongji_title"><span id="toggle_year" class="toggle fr">收起 ∧</span>年度统计情况</div>
+        <div class="toggle_con">
+        <div id="filter_year" class="tongji_select">
+            <div class="fl">
+                <span>统计年度：</span>
+                <select class="yearAsc s-w80">
+                </select>
+                <span>至</span>
+                <select class="yearDesc s-w80">
+                </select>
+            </div>
+            <div class="fr">
+                <span class="select-tit">地区筛选：</span>
+                <select class="areas s-w80">
+                </select>
+                <span class="select-tit">行业筛选：</span>
+                <select class="indClass1 s-w100">
+                </select>
+                <select class="indClass2 s-w130">
+                	<option value="全部" name="" selected>全部</option>
+                </select>
+            </div>
+        </div>
+        <div class="tongji_data tongji_data_one clearfix">
+        	<div class="tongji_data_chart fl">
+            	<h2 id="tit_year"></h2>
+                <div id="tdc_year" class="tdc_box"></div>
+            </div>
+        	<div class="tongji_data_txt fr" id="txt-year">
+            </div>
+        </div>
+        </div>
+    </article>
+    
+    <article>
+    	<div class="tongji_title"><span id="toggle_area" class="toggle fr">收起 ∧</span>区域统计情况</div>
+        <div class="toggle_con">
+        <div id="filter_area" class="tongji_select">
+            <div class="fl">
+                <span>统计年度：</span>
+                <select class="yearDesc s-w80">
+                </select>
+            </div>
+            <div class="fr">
+                <span class="select-tit">行业筛选：</span>
+                <select class="indClass1 s-w100">
+                </select>
+                <select class="indClass2 s-w130">
+                	<option value="全部" name="" selected>全部</option>
+                </select>
+            </div>
+        </div>
+        <div class="tongji_data tongji_data_two clearfix">
+        	<div class="tongji_data_chart fl">
+            	<h2 id="tit_area"></h2>
+                <div id="tdc_area" class="tdc_box"></div>
+            </div>
+        	<div class="tongji_data_txt fr" id="txt-area">
+            </div>
+        </div>
+        </div>
+    </article>
+    
+    <article>
+    	<div class="tongji_title"><span id="toggle_industry" class="toggle fr">收起 ∧</span>行业统计情况</div>
+        <div class="toggle_con">
+        <div id="filter_industry" class="tongji_select">
+            <div class="fl">
+                <span>统计年度：</span>
+                <select class="yearDesc s-w80">
+                </select>
+            </div>
+            <div class="fr">
+                <span class="select-tit">地区筛选：</span>
+                <select class="areas s-w80">
+                </select>
+            </div>
+        </div>
+        <div class="tongji_data tongji_data_three clearfix">
+        	<div class="tongji_data_chart fl">
+            	<h2 id="tit_industry"></h2>
+                <div id="tdc_industry" class="tdc_box"></div>
+            </div>
+        	<div class="tongji_data_txt fr" id="txt-industry">
+            </div>
+        </div>
+        </div>
+    </article>
+</section>
+<footer class="footer">
+<p class="footer_text">承建单位：北京文投大数据有限公司、联合信用征信股份有限公司</p>
+</footer>
+<script src="../../asserts/jquery-3.3.1.min.js"></script>
+<script src="../../asserts/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../asserts/echarts/echarts.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/credit_statistics.js"></script>
+</body>
+</html>

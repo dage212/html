@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行业名单</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap-table/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../css/company_list.css">
+</head>
+
+<body>
+<script src="../js/http.js"></script>
+<header class="header">
+    <div class="head_box">
+        <div class="head_logo"><span>北京市文创企业信用服务平台</span></div>
+        <ul class="head_menu">
+            <li ><a href="../../home.html">首页</a></li>
+            <li><a href="./info_search.html">信用查询</a></li>
+            <li class="active"><a href="./company_list.html">行业名单</a></li>
+            <li class=" monitor_menu">
+                <a href="javascript:void(0)">监控跟踪&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./monitor_follow.html">监控概览</a></li>
+                    <li class="menu_list"><a href="./important_things.html">重大事项</a></li>
+                    <li class="menu_list"><a href="./monitor_list.html">监控名单</a></li>
+                </ul>
+            </li>
+            <li class="infor_menu">
+                <a href="#">信用统计&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./credit_statistics.html">统计概况</a></li>
+                    <li class="menu_list"><a href="./credit_score.html">评分分布</a></li>
+                </ul>
+            </li>
+            <li ><a href="./company_select.html">企业优选</a></li>
+            <li><a href="./credit_map.html">信用地图</a></li>
+        </ul>
+        <ul class="login_out">
+            <li><a href="./user_sys.html"><img class="login_png" src="../images/user.png" /></a></li>
+            <li><a href="#"><img class="logout_png" src="../images/quit.png"/></a></li>
+        </ul>
+    </div>
+</header>
+<section class="section">
+    <nav class="bread">
+        <span class="crumb_one">当前位置</span>&nbsp;:&nbsp;<a class="crumb_two" href="#">首页</a>&nbsp;>&nbsp;<a class="crumb_three" href="#">行业名单</a>
+    </nav>
+    <article class="filter_tab">
+        <div class="tab_box">
+            <div class="filter_tab_top" >
+                文创企业全名单
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="tab_box">
+            <div class="filter_tab_top">
+                黑名单
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="tab_box">
+            <div class="filter_tab_top">
+                灰名单
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+    </article>
+    
+    <article>
+        <div id="tab-all" class="tab-filter">
+        <article class="filter">
+            <ul class="filter_one">
+                <li class="filter_title">
+                    企业类型：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0">文化艺术</li>
+                        <li class="list" data-query="1">新闻出版</li>
+                        <li class="list" data-query="2">广播电视电影</li>
+                        <li class="list" data-query="3">软件网络及计算机服务</li>
+                        <li class="list" data-query="4">广告会展</li>
+                        <li class="list" data-query="5">艺术品交易</li>
+                        <li class="list" data-query="6">设计服务</li>
+                        <li class="list" data-query="7">旅游休闲娱乐</li>
+                        <li class="list" data-query="8">其它辅助服务</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_two">
+                <li class="filter_title">
+                    所在地区：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all" data-query="beijing">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="dongcheng">东城</li>
+                        <li class="list" data-query="xicheng">西城</li>
+                        <li class="list" data-query="chaoyang">朝阳</li>
+                        <li class="list" data-query="fengtai">丰台</li>
+                        <li class="list" data-query="shijingshan">石景山</li>
+                        <li class="list" data-query="haidian">海淀</li>
+                        <li class="list" data-query="shunyi">顺义</li>
+                        <li class="list" data-query="tongzhou">通州</li>
+                        <li class="list" data-query="daxing">大兴</li>
+                        <li class="list" data-query="fangshan">房山</li>
+                        <li class="list" data-query="mentougou">门头沟</li>
+                        <li class="list" data-query="changping">昌平</li>
+                        <li class="list" data-query="pinggu">平谷</li>
+                        <li class="list" data-query="miyun">密云</li>
+                        <li class="list" data-query="huairou">怀柔</li>
+                        <li class="list" data-query="yanqing">延庆</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_three">
+                <li class="filter_title">
+                    成立日期：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0:365">1年以内</li>
+                        <li class="list" data-query="365:1095">1~3年</li>
+                        <li class="list" data-query="1095:1825">3~5年</li>
+                        <li class="list" data-query="1825:2555">5~7年</li>
+                        <li class="list" data-query="2555:*">7年以上</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_four" style="display: none;">
+                <li class="filter_title">
+                    筛选条件：
+                </li>
+                <li class="filter_content">
+                </li>
+            </ul>
+            <ul class="search_range">
+                <li class="range_input_box">
+                <span class="text">
+                    应收账款（万元）：
+                </span>
+                    <input type="text" class="input_start account_start"> -
+                    <input type="text" class="input_start account_end">
+                </li>
+                <li class="range_input_box">
+                <span class="text">
+                    资产合计（万元）：
+                </span>
+                    <input type="text" class="input_start assets_start"> -
+                    <input type="text" class="input_start assets_end">
+                </li>
+                <li class="range_input_box">
+                <span class="text">
+                    长期借款（万元）：
+                </span>
+                    <input type="text" class="input_start long_start"> -
+                    <input type="text" class="input_start long_end">
+                </li>
+                <li class="range_input_box">
+                <span class="text">
+                    净利润（万元）：
+                </span>
+                    <input type="text" class="input_start netpro_start"> -
+                    <input type="text" class="input_start netpro_end">
+                </li>
+                <li class="range_input_box">
+                <span class="text">
+                    营业收入（万元）：
+                </span>
+                    <input type="text" class="input_start operate_start"> -
+                    <input type="text" class="input_start operate_end">
+                </li>
+                <li class="range_input_box">
+                    <div class="filter_button">
+                        搜索
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article class="filter_data_head">
+            <img src="../images/list.png" alt="" class="filter_head_img">
+            <span class="filter_head_title">文创企业全名单列表</span>
+            <span class="filter_dec"></span>
+            <span class="filter_page"></span>
+        </article>
+        <article class="filter_data">
+            <table id="filter-table"></table>
+        </article>
+        </div>
+        
+        <div id="tab-hmd" class="tab-filter" style="display: none;">
+        <article class="filter">
+            <ul class="filter_one">
+                <li class="filter_title">
+                    企业类型：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0">文化艺术</li>
+                        <li class="list" data-query="1">新闻出版</li>
+                        <li class="list" data-query="2">广播电视电影</li>
+                        <li class="list" data-query="3">软件网络及计算机服务</li>
+                        <li class="list" data-query="4">广告会展</li>
+                        <li class="list" data-query="5">艺术品交易</li>
+                        <li class="list" data-query="6">设计服务</li>
+                        <li class="list" data-query="7">旅游休闲娱乐</li>
+                        <li class="list" data-query="8">其它辅助服务</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_two">
+                <li class="filter_title">
+                    所在地区：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all" data-query="beijing">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="dongcheng">东城</li>
+                        <li class="list" data-query="xicheng">西城</li>
+                        <li class="list" data-query="chaoyang">朝阳</li>
+                        <li class="list" data-query="fengtai">丰台</li>
+                        <li class="list" data-query="shijingshan">石景山</li>
+                        <li class="list" data-query="haidian">海淀</li>
+                        <li class="list" data-query="shunyi">顺义</li>
+                        <li class="list" data-query="tongzhou">通州</li>
+                        <li class="list" data-query="daxing">大兴</li>
+                        <li class="list" data-query="fangshan">房山</li>
+                        <li class="list" data-query="mentougou">门头沟</li>
+                        <li class="list" data-query="changping">昌平</li>
+                        <li class="list" data-query="pinggu">平谷</li>
+                        <li class="list" data-query="miyun">密云</li>
+                        <li class="list" data-query="huairou">怀柔</li>
+                        <li class="list" data-query="yanqing">延庆</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_three">
+                <!--<li class="filter_title">-->
+                    <!--失信原因：-->
+                <!--</li>-->
+                <!--<li class="filter_content">-->
+                    <!--<span class="filter_one_all">全部</span>-->
+                    <!--<ul class="filter_lists">-->
+                        <!--<li class="list" data-query="">骗取补贴</li>-->
+                        <!--<li class="list">欠钱不还</li>-->
+                        <!--<li class="list">非法交易</li>-->
+                        <!--<li class="list">传播非法信息</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            </ul>
+            <ul class="filter_four" style="display:none;">
+                <li class="filter_title">
+                    筛选条件：
+                </li>
+                <li class="filter_content">
+
+                </li>
+            </ul>
+        </article>
+        <article class="filter_data_head">
+            <img src="../images/list.png" alt="" class="filter_head_img">
+            <span class="filter_head_title">文创企业全名单列表</span>
+            <span class="filter_dec"></span>
+            <span class="filter_page"></span>
+        </article>
+        <article class="filter_data">
+            <table id="filter-table-sx"></table>
+        </article>
+        </div>
+        
+        <div id="tab-yx" class="tab-filter" style="display: none;">
+        <article class="filter">
+            <ul class="filter_one">
+                <li class="filter_title">
+                    企业类型：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0">文化艺术</li>
+                        <li class="list" data-query="1">新闻出版</li>
+                        <li class="list" data-query="2">广播电视电影</li>
+                        <li class="list" data-query="3">软件网络及计算机服务</li>
+                        <li class="list" data-query="4">广告会展</li>
+                        <li class="list" data-query="5">艺术品交易</li>
+                        <li class="list" data-query="6">设计服务</li>
+                        <li class="list" data-query="7">旅游休闲娱乐</li>
+                        <li class="list" data-query="8">其它辅助服务</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_two">
+                <li class="filter_title">
+                    所在地区：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all" data-query="beijing">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="dongcheng">东城</li>
+                        <li class="list" data-query="xicheng">西城</li>
+                        <li class="list" data-query="chaoyang">朝阳</li>
+                        <li class="list" data-query="fengtai">丰台</li>
+                        <li class="list" data-query="shijingshan">石景山</li>
+                        <li class="list" data-query="haidian">海淀</li>
+                        <li class="list" data-query="shunyi">顺义</li>
+                        <li class="list" data-query="tongzhou">通州</li>
+                        <li class="list" data-query="daxing">大兴</li>
+                        <li class="list" data-query="fangshan">房山</li>
+                        <li class="list" data-query="mentougou">门头沟</li>
+                        <li class="list" data-query="changping">昌平</li>
+                        <li class="list" data-query="pinggu">平谷</li>
+                        <li class="list" data-query="miyun">密云</li>
+                        <li class="list" data-query="huairou">怀柔</li>
+                        <li class="list" data-query="yanqing">延庆</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_three">
+                <li class="filter_title">
+                    成立日期：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0:365">1年以内</li>
+                        <li class="list" data-query="365:1095">1~3年</li>
+                        <li class="list" data-query="1095:1825">3~5年</li>
+                        <li class="list" data-query="1825:2555">5~7年</li>
+                        <li class="list" data-query="2555:*">7年以上</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_four" style="display:none;">
+                <li class="filter_title">
+                    筛选条件：
+                </li>
+                <li class="filter_content">
+                </li>
+            </ul>
+        </article>
+        <article class="filter_data_head">
+            <img src="../images/list.png" alt="" class="filter_head_img">
+            <span class="filter_head_title">文创企业全名单列表</span>
+            <span class="filter_dec"></span>
+            <span class="filter_page"></span>
+        </article>
+        <article class="filter_data">
+            <table id="filter-table-yx"></table>
+        </article>
+        </div>
+    </article>
+</section>
+<footer class="footer">
+<p class="footer_text">承建单位：北京文投大数据有限公司、联合信用征信股份有限公司</p>
+</footer>
+<script src="../../asserts/jquery-3.3.1.min.js"></script>
+<script src="../../asserts/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../asserts/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../../asserts/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/company_list.js"></script>
+</body>
+</html>

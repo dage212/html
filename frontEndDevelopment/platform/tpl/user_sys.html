@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap-table/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../../asserts/layui/css/layer.css">
+    <link rel="stylesheet" href="../css/user_sys.css">
+</head>
+<body>
+<script src="../js/http.js"></script>
+<header class="header">
+    <div class="head_box">
+        <div class="head_logo"><span>北京市文创企业信用服务平台</span></div>
+        <ul class="head_menu">
+            <li ><a href="../../home.html">首页</a></li>
+            <li class=""><a href="./info_search.html">信用查询</a></li>
+            <li><a href="./company_list.html">行业名单</a></li>
+            <li class=" monitor_menu ">
+                <a href="javascript:void(0)">监控跟踪&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./monitor_follow.html">监控概览</a></li>
+                    <li class="menu_list"><a href="./important_things.html">重大事项</a></li>
+                    <li class="menu_list"><a href="./monitor_list.html">监控名单</a></li>
+                </ul>
+            </li>
+            <li class="infor_menu ">
+                <a href="#">信用统计&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./credit_statistics.html">统计概况</a></li>
+                    <li class="menu_list"><a href="./credit_score.html">评分分布</a></li>
+                </ul>
+            </li>
+            <li ><a href="./company_select.html">企业优选</a></li>
+            <li ><a href="./credit_map.html">信用地图</a></li>
+        </ul>
+        <ul class="login_out">
+            <li><a href="./user_sys.html"><img class="login_png" src="../images/user.png" /></a></li>
+            <li><a href="#"><img class="logout_png" src="../images/quit.png"/></a></li>
+        </ul>
+    </div>
+</header>
+<section class="section">
+    <nav class="bread">
+        <span class="crumb_one">当前位置</span>&nbsp;:&nbsp;<a class="crumb_two" href="#">首页</a>&nbsp;>&nbsp;<a class="crumb_three" href="#">用户中心</a>
+    </nav>
+    <article class="filter_tab">
+        <div class="tab_box">
+            <div class="filter_tab_top" >
+                用户设置
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="tab_box">
+            <div class="filter_tab_top">
+                密码设置
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+    </article>
+    <article class="form_box" id="verifyCheck">
+        <ul class="form_container" >
+            <li class="form_list">
+                <label for="user">用户名称:</label>
+                <input type="text" name="userName" id="userName" class="required" placeholder="请输入用户名称"  maxlength="10" data-valid="isNonEmpty||between:2-10" data-error="用户名称不能为空||用户名称长度2-10位">
+                <span class="form_tip focus valid"></span>
+            </li>
+            <li class="form_list">
+                <label for="user">用户邮箱:</label>
+                <input type="text" name="email" id="email" class="required" placeholder="请输入邮箱号" data-valid="isNonEmpty||isEmail" value="" data-error="邮箱不能为空||邮箱格式不正确">
+                <span class="form_tip focus valid"><i class="red">*</i>该邮箱用于接收评级报告</span>
+            </li>
+            <li class="form_list">
+                <label for="user">用户手机号码:</label>
+                <input type="text" name="phone" id="phone" class="required" placeholder="请输入手机号" maxlength="11" data-valid="isNonEmpty||isPhone" data-error="手机号码不能为空||手机号码格式不正确">
+                <span class="form_tip focus valid"></span>
+            </li>
+            <li class="form_list">
+                <button id="confirmUser" class="user_button">确认修改</button>
+            </li>
+        </ul>
+        <ul class="form_container" style="display: none;">
+            <li class="form_list">
+                <label for="user">原始密码:</label>
+                <input type="text" name="password" id="initialPaw" class="required" placeholder="请输入原密码" data-valid="isNonEmpty" data-error="请输入原密码">
+                <span class="form_tip focus valid"></span>
+            </li>
+            <li class="form_list">
+                <label for="user">新密码:</label>
+                <input type="text" name="newPassword" id="password" class="required" placeholder="请输入新密码" data-valid="isNonEmpty" data-error="密码不能为空">
+                <span class="form_tip focus valid"></span>
+            </li>
+            <li class="form_list">
+                <label for="user">再次输入新密码:</label>
+                <input type="text" name="rePassword" id="rePassword" class="required" placeholder="请输入新密码" data-valid="isNonEmpty||isRepeat:password" data-error="密码不能为空||两次密码输入不一致">
+                <span class="form_tip focus valid"></span>
+            </li>
+            <li class="form_list">
+                <button id="confirmPwd" class="password_button">确认修改</button>
+            </li>
+        </ul>
+    </article>
+</section>
+<footer class="footer">
+    <p class="footer_text">承建单位：北京文投大数据有限公司、联合信用征信股份有限公司</p>
+</footer>
+<script src="../../asserts/jquery-3.3.1.min.js"></script>
+<script src="../../asserts/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../asserts/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../../asserts/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../../asserts/layui/layer.js"></script>
+<script src="../../asserts/register.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user_sys.js"></script>
+</body>
+</html>

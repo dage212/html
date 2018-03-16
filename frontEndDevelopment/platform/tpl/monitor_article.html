@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监控跟踪-监控详情</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap-table/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../css/monitor_article.css">
+</head>
+<body >
+<script src="../js/http.js"></script>
+<header class="header">
+    <div class="head_box">
+        <div class="head_logo"><span>北京市文创企业信用服务平台</span></div>
+        <ul class="head_menu">
+            <li ><a href="../../home.html">首页</a></li>
+            <li class=""><a href="./info_search.html">信用查询</a></li>
+            <li><a href="./company_list.html">行业名单</a></li>
+            <li class=" monitor_menu active">
+                <a href="javascript:void(0)">监控跟踪&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./monitor_follow.html">监控概览</a></li>
+                    <li class="menu_list"><a href="./important_things.html">重大事项</a></li>
+                    <li class="menu_list"><a href="./monitor_list.html">监控名单</a></li>
+                </ul>
+            </li>
+            <li class="infor_menu ">
+                <a href="#">信用统计&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./credit_statistics.html">统计概况</a></li>
+                    <li class="menu_list"><a href="./credit_score.html">评分分布</a></li>
+                </ul>
+            </li>
+            <li ><a href="./company_select.html">企业优选</a></li>
+            <li ><a href="./credit_map.html">信用地图</a></li>
+        </ul>
+        <ul class="login_out">
+            <li><a href="./user_sys.html"><img class="login_png" src="../images/user.png" /></a></li>
+            <li><a href="#"><img class="logout_png" src="../images/quit.png"/></a></li>
+        </ul>
+    </div>
+</header>
+<section class="section">
+    <nav class="bread">
+        <span class="crumb_one">当前位置</span>&nbsp;:&nbsp;<a class="crumb_two" href="#">首页</a>&nbsp;>&nbsp;<a class="crumb_two" href="#">监控跟踪</a> > <a class="crumb_three" href="#">监控详情</a>&nbsp;
+    </nav>
+    <article class="company_info">
+        <!--<div class="logo_box">-->
+            <!--<img src="../images/comy_logo2.png" alt="" class="logo">-->
+        <!--</div>-->
+        <div class="company_infos">
+            <div class="title_box">
+                <span class="title">北京艺网文化有限公司</span>
+                <span class="dotted_1">文化艺术</span>
+                <span class="dotted_3">红色预警</span>
+            </div>
+        </div>
+    </article>
+    <article class="info_types">
+        <ul class="tab_content">
+            <li class="tab_content_li">
+                <ul class="tab_hash_li_box" id="myScrollspy">
+                    <li class="tab_hash_li"><a href="#sjsfjf">涉及司法纠纷</a><span> 2</span></li>
+                    <li class="tab_hash_li"><a href="#sdxzcf">受到行政处罚</a><span> 10</span></li>
+                </ul>
+                <div class="tab_content_body">
+                    <div class="tab_content_inner" data-spy="scroll" data-target="#myScrollspy" data-offset="0">
+                        <div class="content_box" id="sjsfjf">
+                            <div class="title">
+                                <img src="../images/arrow.png" alt="" width="13" height="13">
+                                <span>涉及司法纠纷<span class="num"> 2</span></span>
+                            </div>
+                            <table class="table table-bordered table-style2">
+                                <tr>
+                                    <td width="250">司法纠纷类型</td>
+                                    <td width="220">预警时间</td>
+                                    <td width="240">案号</td>
+                                    <td width="180">类型</td>
+                                    <td width="250">法院</td>
+                                </tr>
+                                <tr>
+                                    <td>诉讼判决</td>
+                                    <td>2016-12-12</td>
+                                    <td>(2017)京02民终4510号</td>
+                                    <td>行政判决书</td>
+                                    <td>北京市第二人民法院</td>
+                                </tr>
+                                <tr>
+                                    <td>诉讼判决</td>
+                                    <td>2016-12-12</td>
+                                    <td>(2017)京02民终4510号</td>
+                                    <td>行政判决书</td>
+                                    <td>北京市第二人民法院</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="content_box" id="sdxzcf">
+                            <div class="title">
+                                <img src="../images/arrow.png" alt="" width="13" height="13">
+                                <span>受到行政处罚<span class="num"> 10</span></span>
+                            </div>
+                            <table class="table table-bordered table-style2 table-style3">
+                                <tr>
+                                    <td width="180">决定书文号</td>
+                                    <td width="460">行政处罚内容</td>
+                                    <td width="230">决定机关名称</td>
+                                    <td width="110">违法行为类型</td>
+                                    <td width="170">处罚决定日期</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>京文执法（2015）第40321号</td>
+                                    <td class="td-left">罚款1000000元。本案未采取行政强制措施</td>
+                                    <td>北京市工商行政管理局海淀分局</td>
+                                    <td>罚款</td>
+                                    <td>2016-12-12</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </article>
+</section>
+<footer class="footer">
+    <p class="footer_text">承建单位：北京文投大数据有限公司、联合信用征信股份有限公司</p>
+</footer>
+<script src="../../asserts/jquery-3.3.1.min.js"></script>
+<script src="../../asserts/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="../../asserts/layui/layui.all.js"></script>-->
+<script src="../../asserts/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../../asserts/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/info_search_basic.js"></script>
+</body>
+</html>

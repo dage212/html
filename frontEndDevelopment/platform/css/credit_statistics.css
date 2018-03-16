@@ -1,0 +1,86 @@
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: " ";
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+ *zoom: 1;
+}
+.tongji_title {
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 0 15px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+}
+.tongji_title .toggle {
+	font-size: 14px;
+	color: #666;
+	cursor: pointer;
+}
+.toggle_con {
+	width: 1200px;
+	margin: 0 auto;
+}
+.tongji_select {
+	height: 50px;
+	margin: 10px auto;
+	padding: 0 15px;
+	background-color: #fff;
+	line-height: 50px;
+}
+.tongji_select span {
+	font-size: 16px;
+	font-weight: bold;
+}
+.tongji_select .select-tit {
+	margin-left: 10px;
+}
+.tongji_select select {
+	height: 28px;
+	margin: 0 2px;
+	line-height: 28px;
+}
+.tongji_select .s-w80 {
+	width: 80px;
+}
+.tongji_select .s-w100 {
+	width: 100px;
+}
+.tongji_select .s-w130 {
+	width: 130px;
+}
+.tongji_data {
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.tongji_data_chart {
+	width: 860px;
+}
+.tongji_data_chart h2 {
+	margin: 0;
+	font-size: 14px;
+}
+.tongji_data_chart .tdc_box {
+	width: 840px;
+	height: 360px;
+	margin: 0 auto;
+}
+.tongji_data_txt {
+	width: 240px;
+	margin: 50px 30px 0 0;
+	line-height: 24px;
+	text-align: justify;
+}
+.tongji_data_txt i{text-decoration:underline; font-style:normal;}

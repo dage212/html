@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信用地图</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap-table/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../../asserts/jquery-scrollbar/style.css">
+    <link rel="stylesheet" href="../../asserts/jquery-scrollbar/prettify/prettify.css">
+    <link rel="stylesheet" href="../css/credit_map.css">
+    <script src="../../asserts/jquery-3.3.1.min.js"></script>
+    <script src="../../asserts/jquery-scrollbar/prettify/prettify.js"></script>
+    <script src="../../asserts/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+</head>
+<body>
+<script src="../js/http.js"></script>
+<header class="header">
+    <div class="head_box">
+        <div class="head_logo"><span>北京市文创企业信用服务平台</span></div>
+        <ul class="head_menu">
+            <li ><a href="../../home.html">首页</a></li>
+            <li><a href="./info_search.html">信用查询</a></li>
+            <li><a href="./company_list.html">行业名单</a></li>
+            <li class=" monitor_menu">
+                <a href="javascript:void(0)">监控跟踪&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./monitor_follow.html">监控概览</a></li>
+                    <li class="menu_list"><a href="./important_things.html">重大事项</a></li>
+                    <li class="menu_list"><a href="./monitor_list.html">监控名单</a></li>
+                </ul>
+            </li>
+            <li class="infor_menu">
+                <a href="#">信用统计&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./credit_statistics.html">统计概况</a></li>
+                    <li class="menu_list"><a href="./credit_score.html">评分分布</a></li>
+                </ul>
+            </li>
+            <li ><a href="./company_select.html">企业优选</a></li>
+            <li class="active"><a href="./credit_map.html">信用地图</a></li>
+        </ul>
+        <ul class="login_out">
+            <li><a href="./user_sys.html"><img class="login_png" src="../images/user.png" /></a></li>
+            <li><a href="#"><img class="logout_png" src="../images/quit.png"/></a></li>
+        </ul>
+    </div>
+</header>
+<section class="section">
+    <nav class="bread">
+        <span class="crumb_one">当前位置</span>&nbsp;:&nbsp;<a class="crumb_two" href="#">首页</a>&nbsp;>&nbsp;<a class="crumb_three" href="#">信用地图</a>
+    </nav>
+    <article class="map_content">
+        <div class="map_left">
+            <div class="location_bj">
+                <img src="../images/location.png" alt="">
+                <span class="bj">北京市</span>
+                <span class="company_total">企业 :&nbsp;<span>0家</span></span>
+            </div>
+            <div class="search_input_box">
+                <input type="text" class="search_input">
+                <button class="search"><img src="../images/search.png" alt=""></button>
+            </div>
+            <div class="select_box">
+                <select name="" id="industry" class="industry">
+                    <option value="">请选择</option>
+                    <option value="0">文化艺术</option>
+                    <option value="1">新闻出版</option>
+                    <option value="2">广播电影电视</option>
+                    <option value="3">软件网络及计算机服务</option>
+                    <option value="4">广告会展</option>
+                    <option value="5">艺术品交易</option>
+                    <option value="6">设计服务</option>
+                    <option value="7">旅游休闲娱乐</option>
+                    <option value="8">其它辅助服务</option>
+                </select>
+                <select name="" id="area" class="area">
+                    <option value="">请选择地区</option>
+                    <option value="dongcheng">东城</option>
+                    <option value="xicheng">西城</option>
+                    <option value="chaoyang">朝阳</option>
+                    <option value="fengtai">丰台</option>
+                    <option value="shijingshan">石景山</option>
+                    <option value="haidian">海淀</option>
+                    <option value="shunyi">顺义</option>
+                    <option value="tongzhou">通州</option>
+                    <option value="daxing">大兴</option>
+                    <option value="fangshan">房山</option>
+                    <option value="mentougou">门头沟</option>
+                    <option value="changping">昌平</option>
+                    <option value="pinggu">平谷</option>
+                    <option value="miyun">密云</option>
+                    <option value="huairou">怀柔</option>
+                    <option value="yanqing">延庆</option>
+                </select>
+                <select name="" id="score" class="rank">
+                    <option value="">请选择信用分范围</option>
+                    <option value="0:60">60分以下</option>
+                    <option value="60:*">60分以上</option>
+                    <option value="70:*">70分以上</option>
+                    <option value="80:*">80分以上</option>
+                    <option value="90:*">90分以上</option>
+                </select>
+            </div>
+            <!--滚动条-->
+            <div class="content">
+                <style type="text/css" id="css-common">
+                    /*************** SCROLLBAR BASE CSS ***************/
+
+                    .scroll-wrapper {
+                        overflow: hidden !important;
+                        padding: 0 !important;
+                        position: relative;
+                    }
+
+                    .scroll-wrapper > .scroll-content {
+                        border: none !important;
+                        box-sizing: content-box !important;
+                        height: auto;
+                        left: 0;
+                        margin: 0;
+                        max-height: none;
+                        max-width: none !important;
+                        overflow: scroll !important;
+                        padding: 0;
+                        position: relative !important;
+                        top: 0;
+                        width: auto !important;
+                    }
+
+                    .scroll-wrapper > .scroll-content::-webkit-scrollbar {
+                        height: 0;
+                        width: 0;
+                    }
+
+                    .scroll-element {
+                        display: none;
+                    }
+                    .scroll-element, .scroll-element div {
+                        box-sizing: content-box;
+                    }
+
+                    .scroll-element.scroll-x.scroll-scrollx_visible,
+                    .scroll-element.scroll-y.scroll-scrolly_visible {
+                        display: block;
+                    }
+
+                    .scroll-element .scroll-bar,
+                    .scroll-element .scroll-arrow {
+                        cursor: default;
+                    }
+
+                    .scroll-textarea {
+                        border: 1px solid #cccccc;
+                        border-top-color: #999999;
+                    }
+                    .scroll-textarea > .scroll-content {
+                        overflow: hidden !important;
+                    }
+                    .scroll-textarea > .scroll-content > textarea {
+                        border: none !important;
+                        box-sizing: border-box;
+                        height: 100% !important;
+                        margin: 0;
+                        max-height: none !important;
+                        max-width: none !important;
+                        overflow: scroll !important;
+                        outline: none;
+                        padding: 2px;
+                        position: relative !important;
+                        top: 0;
+                        width: 100% !important;
+                    }
+                    .scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+                        height: 0;
+                        width: 0;
+                    }
+
+
+
+
+                </style>
+                <style type="text/css">
+
+                    /*************** SIMPLE INNER SCROLLBAR ***************/
+
+                    .scrollbar-inner > .scroll-element,
+                    .scrollbar-inner > .scroll-element div
+                    {
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        z-index: 10;
+                    }
+
+                    .scrollbar-inner > .scroll-element div {
+                        display: block;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                    }
+
+                    .scrollbar-inner > .scroll-element.scroll-x {
+                        bottom: 2px;
+                        height: 8px;
+                        left: 0;
+                        width: 100%;
+                    }
+
+                    .scrollbar-inner > .scroll-element.scroll-y {
+                        height: 100%;
+                        right: 2px;
+                        top: 0;
+                        width: 8px;
+                    }
+
+                    .scrollbar-inner > .scroll-element .scroll-element_outer {
+                        overflow: hidden;
+                    }
+
+                    .scrollbar-inner > .scroll-element .scroll-element_outer,
+                    .scrollbar-inner > .scroll-element .scroll-element_track,
+                    .scrollbar-inner > .scroll-element .scroll-bar {
+                        -webkit-border-radius: 8px;
+                        -moz-border-radius: 8px;
+                        border-radius: 8px;
+                    }
+
+                    .scrollbar-inner > .scroll-element .scroll-element_track,
+                    .scrollbar-inner > .scroll-element .scroll-bar {
+                        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+                        filter: alpha(opacity=40);
+                        opacity: 0.4;
+                    }
+
+                    .scrollbar-inner > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
+                    .scrollbar-inner > .scroll-element .scroll-bar { background-color: #c2c2c2; }
+                    .scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #919191; }
+                    .scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+
+
+                    /* update scrollbar offset if both scrolls are visible */
+
+                    .scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
+                    .scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+
+
+                    .scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+                    .scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+
+                </style>
+                <div class="demo">
+                    <div class="scrollbar-inner">
+                        <!--滚动条内容-->
+                        <!--<div class="innner_lsit">-->
+                            <!--<div class="inner_list_left">-->
+                                <!--<img src="../images/company.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="inner_list_right">-->
+                                <!--<div class="right_company">-->
+                                    <!--<span class="company_name">中国文化传媒集团有限公司收到收到</span>-->
+                                    <!--<span class="status">开业</span>-->
+                                <!--</div>-->
+                                <!--<div class="company_type">文化艺术</div>-->
+                                <!--<div class="marks_box">信用分: <span class="marks">97</span></div>-->
+                                <!--<div class="start_time">-->
+                                    <!--成立时间: 2012年10月20日-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="innner_lsit">-->
+                            <!--<div class="inner_list_left">-->
+                                <!--<img src="../images/company.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="inner_list_right">-->
+                                <!--<div class="right_company">-->
+                                    <!--<span class="company_name">中国文化传媒集团有限公司</span>-->
+                                    <!--<span class="status">开业</span>-->
+                                <!--</div>-->
+                                <!--<div class="company_type">文化艺术</div>-->
+                                <!--<div class="marks_box">信用分: <span class="marks">97</span></div>-->
+                                <!--<div class="start_time">-->
+                                    <!--成立时间: 2012年10月20日-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="innner_lsit">-->
+                            <!--<div class="inner_list_left">-->
+                                <!--<img src="../images/company.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="inner_list_right">-->
+                                <!--<div class="right_company">-->
+                                    <!--<span class="company_name">中国文化传媒集团有限公司</span>-->
+                                    <!--<span class="status">开业</span>-->
+                                <!--</div>-->
+                                <!--<div class="company_type">文化艺术</div>-->
+                                <!--<div class="marks_box">信用分: <span class="marks">97</span></div>-->
+                                <!--<div class="start_time">-->
+                                    <!--成立时间: 2012年10月20日-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="innner_lsit">-->
+                            <!--<div class="inner_list_left">-->
+                                <!--<img src="../images/company.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="inner_list_right">-->
+                                <!--<div class="right_company">-->
+                                    <!--<span class="company_name">中国文化传媒集团有限公司</span>-->
+                                    <!--<span class="status">开业</span>-->
+                                <!--</div>-->
+                                <!--<div class="company_type">文化艺术</div>-->
+                                <!--<div class="marks_box">信用分: <span class="marks">97</span></div>-->
+                                <!--<div class="start_time">-->
+                                    <!--成立时间: 2012年10月20日-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="innner_lsit">-->
+                            <!--<div class="inner_list_left">-->
+                                <!--<img src="../images/company.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="inner_list_right">-->
+                                <!--<div class="right_company">-->
+                                    <!--<span class="company_name">中国文化传媒集团有限公司</span>-->
+                                    <!--<span class="status">开业</span>-->
+                                <!--</div>-->
+                                <!--<div class="company_type">文化艺术</div>-->
+                                <!--<div class="marks_box">信用分: <span class="marks">97</span></div>-->
+                                <!--<div class="start_time">-->
+                                    <!--成立时间: 2012年10月20日-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="innner_lsit">-->
+                            <!--<div class="inner_list_left">-->
+                                <!--<img src="../images/company.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="inner_list_right">-->
+                                <!--<div class="right_company">-->
+                                    <!--<span class="company_name">中国文化传媒集团有限公司</span>-->
+                                    <!--<span class="status">开业</span>-->
+                                <!--</div>-->
+                                <!--<div class="company_type">文化艺术</div>-->
+                                <!--<div class="marks_box">信用分: <span class="marks">97</span></div>-->
+                                <!--<div class="start_time">-->
+                                    <!--成立时间: 2012年10月20日-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="innner_lsit">-->
+                            <!--<div class="inner_list_left">-->
+                                <!--<img src="../images/company.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="inner_list_right">-->
+                                <!--<div class="right_company">-->
+                                    <!--<span class="company_name">中国文化传媒集团有限公司</span>-->
+                                    <!--<span class="status">开业</span>-->
+                                <!--</div>-->
+                                <!--<div class="company_type">文化艺术</div>-->
+                                <!--<div class="marks_box">信用分: <span class="marks">97</span></div>-->
+                                <!--<div class="start_time">-->
+                                    <!--成立时间: 2012年10月20日-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--滚动条内容-->
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    window.prettyPrint && prettyPrint();
+                    jQuery('.scrollbar-inner').scrollbar();
+                </script>
+            </div>
+            <!--滚动条-->
+        </div>
+
+        <div class="map_right">
+            <script>
+                // $(".map_right").height($(".map_left").height())
+            </script>
+            <div id="map" class="map" ></div>
+
+        </div>
+    </article>
+
+
+</section>
+
+<footer class="footer">
+    <p class="footer_text">承建单位：北京文投大数据有限公司、联合信用征信股份有限公司</p>
+</footer>
+<script type="text/html" id="scrollbar-inner_tpl">
+    {{if rows.length == 0}}
+    <div class="innner_lsit">
+        <div style="text-align: center;color:#333;font-size:16px;">查询无结果</div>
+    </div>
+    {{/if}}
+    {{each rows  v index}}
+    <div class="innner_lsit">
+        <div class="inner_list_left">
+            <img src="../images/b_location.png" alt="">
+        </div>
+        <div class="inner_list_right">
+            <div class="right_company">
+                <span class="company_name">{{v.name}}</span>
+                <span class="status">{{v.regStatusStr}}</span>
+                <span class="company_type" style="margin-left:10px;padding:2px 8px;font-size:12px;">文化艺术</span>
+            </div>
+            <!--<div class="company_type">文化艺术</div>-->
+            <div class="marks_box">信用分: <span class="marks">{{v.score|format "floor"}}</span></div>
+            <div class="start_time">
+                成立时间: {{v.estiblishTimeStr}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="../../asserts/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="../../asserts/layui/layui.all.js"></script>-->
+<script src="../../asserts/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../../asserts/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=UbsfVFxs3p47MGTOcXwg2l7ObVn88Pmf"></script>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("map");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
+<script src="../../asserts/artTemplate/template-web.js"></script>
+<script src="../../asserts/jqPaginator/jqpaginator.min.js"></script>
+<script src="../js/credit_map.js"></script>
+</body>
+</html>

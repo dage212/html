@@ -1,0 +1,279 @@
+.header .navbar-nav > li > a {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #ffffff;
+}
+.header .navbar-nav > li > a:hover {
+	color: #ffffff;
+}
+.navbar-header .navbar-brand {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #ffffff;
+}
+.navbar-header .navbar-brand:hover {
+	color: #ffffff;
+}
+.navbar {
+	background: #084062;
+}
+.container-fluid {
+	background-color: #084062;
+	height: 60px;
+}
+/*过滤条件*/
+.filter {
+	background: #ffffff;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 16px;
+}
+.filter .active{
+	display: block;
+	padding: 5px 5px;
+	background: #11A0EC;
+	color: #fff!important;
+	text-align: center;
+}
+.filter .input_text {
+	overflow: hidden;
+}
+.filter .filter_input_box {
+	width: 1046px;
+	height: 30px;
+	float: left;
+	position: relative;
+	clear: both;
+}
+.filter .filter_input_box input {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: #999999;
+	font-family: "微软雅黑";
+	border-bottom: 1px solid #CFCFCF;
+	outline: none;
+}
+.filter .filter_input_box input:focus {
+	border-top: none!important;
+}
+.filter .filter_input_box .filter_x {
+	position: absolute;
+	right: 3px;
+	top: 0px;
+	cursor: pointer;
+}
+.filter .filter_button {
+	float: left;
+	width: 100px;
+	height: 32px;
+	background: #084062;
+	text-align: center;
+	line-height: 30px;
+	color: #ffffff;
+	background: #139EED;
+	cursor:pointer;
+}
+.filter .filter_four .filter_one_all:nth-child(1) {
+	margin-left: 0px;
+}
+.filter .filter_four .filter_one_all {
+	background: #F5F8FF!important;
+	width: auto!important;
+	margin-left: 10px;
+	border: 1px dashed #999999;
+}
+.filter .filter_four .filter_one_all .quit {
+	font-size: 12px;
+	margin-left: 6px;
+	font-weight: lighter!important;
+}
+.filter .filter_one, .filter .filter_two, .filter .filter_three, .filter .filter_four {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 10px;
+}
+.filter .filter_one .filter_content, .filter .filter_two .filter_content, .filter .filter_three .filter_content, .filter .filter_four .filter_content {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.filter .filter_one .filter_content .filter_lists, .filter .filter_two .filter_content .filter_lists, .filter .filter_three .filter_content .filter_lists, .filter .filter_four .filter_content .filter_lists {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.filter .filter_one .filter_content .filter_lists .list, .filter .filter_two .filter_content .filter_lists .list, .filter .filter_three .filter_content .filter_lists .list, .filter .filter_four .filter_content .filter_lists .list {
+	padding: 6px 10px;
+	color: #999999;
+	text-align: center;
+	cursor: pointer;
+}
+.filter .filter_one .filter_content .filter_one_all, .filter .filter_two .filter_content .filter_one_all, .filter .filter_three .filter_content .filter_one_all, .filter .filter_four .filter_content .filter_one_all {
+	width: 60px;
+	display: block;
+	padding: 6px 5px;
+	background: #11A0EC;
+	color: #fff;
+	text-align: center;
+	cursor:pointer;
+}
+.filter .filter_one .filter_content .filter_lists .list_cur, .filter .filter_two .filter_content .filter_lists .list_cur, .filter .filter_three .filter_content .filter_lists .list_cur, .filter .filter_four .filter_content .filter_lists .list_cur {
+	background-color: #11A0EC;
+	color: #fff;
+}
+.filter .filter_four .filter_content .filter_cur {
+	color: #999;
+}
+.filter .filter_four .filter_content .filter_cur .quit {
+	cursor: pointer;
+}
+/*过滤表格头部*/
+.filter_data_head {
+	line-height: 18px;
+	width: 1200px;
+	margin: 0 auto;
+	height: 50px;
+	background: #fff;
+	margin-top: 10px;
+	padding: 16px;
+	margin-bottom: 10px;
+}
+.filter_data_head .filter_head_title {
+	float: left;
+}
+.filter_data_head .filter_head_img {
+	margin-top: 3px;
+	margin-right: 6px;
+	float: left;
+}
+.filter_data_head .filter_page, .filter_data_head .filter_dec {
+	float: right;
+	margin-left: 10px;
+}
+.filter_data_head .page_current {
+	color: #139EED;
+}
+/*过滤表格*/
+.filter_data {
+	width: 1200px;
+	background: #fff;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 16px;
+}
+.bootstrap-table .th-inner {
+	color: #333333;
+	text-align: center;
+}
+.bootstrap-table .fixed-table-container {
+	border-radius: 0px;
+}
+.bootstrap-table .pagination-detail {
+	color: #999999;
+}
+.bootstrap-table .page-list .btn {
+	padding: 0px 8px;
+	color: #666666;
+	border-radius: 0px;
+}
+.bootstrap-table .page-list .btn .page-size {
+	color: #666666!important;
+}
+.bootstrap-table .table {
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+}
+.bootstrap-table .fixed-table-container {
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+.bootstrap-table .fixed-table-pagination .pull-right {
+	margin-top: 20px!important;
+}
+.bootstrap-table .fixed-table-pagination .pull-right a {
+	padding: 4px 9px;
+	border-radius: 0px;
+}
+.filter_tab {
+	width: 1200px;
+	background: #fff;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	height: 50px;
+	font-size: 16px;
+	text-align: center;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: row nowrap;
+}
+.filter_tab .line {
+	width: 1px;
+	height: 20px;
+	background: #999999;
+	margin-top: 1px;
+}
+.filter_tab .filter_tab_bottom {
+	height: 16px;
+}
+.filter_tab .filter_tab_bottom img {
+	height: 10px;
+	display: none;
+}
+.filter_tab .tab_box:first-child img {
+	display: inline-block;
+}
+.filter_tab .filter_tab_top {
+	margin-top: 6px;
+	height: 22px;
+	width: 204px;
+	line-height: 26px;
+	cursor: pointer;
+}
+.filter_tab .tab_box:last-child .filter_tab_top {
+	border-right: 0px;
+}
+.page-list{
+	display:inline-block!important;
+}
+
+.filter .search_range {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.filter .search_range .range_input_box {
+	width: 33.333%;
+}
+.filter .search_range .range_input_box .text {
+	color: #333;
+}
+.filter .search_range .range_input_box .input_start {
+	width: 58px;
+	height: 28px;
+}
+.filter .search_range .range_input_box:nth-child(4) {
+	padding-top: 20px;
+	padding-left: 15px;
+}
+.filter .search_range .range_input_box:nth-child(5) {
+	padding-top: 20px;
+}
+.filter .search_range .range_input_box:nth-child(6) {
+	padding-top: 20px;
+}

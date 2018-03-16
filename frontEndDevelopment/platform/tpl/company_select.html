@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业优选</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap-table/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../css/company_select.css">
+</head>
+<body>
+<script src="../js/http.js"></script>
+<header class="header">
+    <div class="head_box">
+        <div class="head_logo"><span>北京市文创企业信用服务平台</span></div>
+        <ul class="head_menu">
+            <li ><a href="../../home.html">首页</a></li>
+            <li><a href="./info_search.html">信用查询</a></li>
+            <li><a href="./company_list.html">行业名单</a></li>
+            <li class=" monitor_menu">
+                <a href="javascript:void(0)">监控跟踪&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./monitor_follow.html">监控概览</a></li>
+                    <li class="menu_list"><a href="./important_things.html">重大事项</a></li>
+                    <li class="menu_list"><a href="./monitor_list.html">监控名单</a></li>
+                </ul>
+            </li>
+            <li class="infor_menu">
+                <a href="#">信用统计&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./credit_statistics.html">统计概况</a></li>
+                    <li class="menu_list"><a href="./credit_score.html">评分分布</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="./company_select.html">企业优选</a></li>
+            <li><a href="./credit_map.html">信用地图</a></li>
+        </ul>
+        <ul class="login_out">
+            <li><a href="./user_sys.html"><img class="login_png" src="../images/user.png" /></a></li>
+            <li><a href="#"><img class="logout_png" src="../images/quit.png"/></a></li>
+        </ul>
+    </div>
+</header>
+<section class="section" id="tab-all">
+    <nav class="bread">
+        <span class="crumb_one">当前位置</span>&nbsp;:&nbsp;<a class="crumb_two" href="#">首页</a>&nbsp;>&nbsp;<a class="crumb_three" href="#">企业优选</a>
+    </nav>
+    <article class="filter_tab">
+        <div class="tab_box" data-query="synthesize">
+            <div class="filter_tab_top">
+                综合信用分排名
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="tab_box" data-query="operationalEfficiency">
+            <div class="filter_tab_top">
+                经营效率排名
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="tab_box" data-query="developmentStatus">
+            <div class="filter_tab_top">
+                发展状况排名
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="tab_box" data-query="profitability">
+            <div class="filter_tab_top">
+                盈利能力排名
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="tab_box" data-query="debtLevelsAndSolvency">
+            <div class="filter_tab_top">
+                负债水平和偿债能力排名
+            </div>
+            <div class="filter_tab_bottom">
+                <img src="../images/sx.png" alt="" height="10">
+            </div>
+        </div>
+    </article>
+    
+	<article>
+        <div id="synthesize" class="tab-filter">
+        <article class="filter">
+            <div class="filter_select_box">
+                <span class="filter_title">
+                    统计年度：
+                </span>
+                <select class="years filter_select">
+                </select>
+            </div>
+            <ul class="filter_one">
+                <li class="filter_title">
+                    行业筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0">文化艺术</li>
+                        <li class="list" data-query="1">新闻出版</li>
+                        <li class="list" data-query="2">广播电视电影</li>
+                        <li class="list" data-query="3">软件网络及计算机服务</li>
+                        <li class="list" data-query="4">广告会展</li>
+                        <li class="list" data-query="5">艺术品交易</li>
+                        <li class="list" data-query="6">设计服务</li>
+                        <li class="list" data-query="7">旅游休闲娱乐</li>
+                        <li class="list" data-query="8">其它辅助服务</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_two">
+                <li class="filter_title">
+                    地区筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="dongcheng">东城</li>
+                        <li class="list" data-query="xicheng">西城</li>
+                        <li class="list" data-query="chaoyang">朝阳</li>
+                        <li class="list" data-query="fengtai">丰台</li>
+                        <li class="list" data-query="shijingshan">石景山</li>
+                        <li class="list" data-query="haidian">海淀</li>
+                        <li class="list" data-query="shunyi">顺义</li>
+                        <li class="list" data-query="tongzhou">通州</li>
+                        <li class="list" data-query="daxing">大兴</li>
+                        <li class="list" data-query="fangshan">房山</li>
+                        <li class="list" data-query="mentougou">门头沟</li>
+                        <li class="list" data-query="changping">昌平</li>
+                        <li class="list" data-query="pinggu">平谷</li>
+                        <li class="list" data-query="miyun">密云</li>
+                        <li class="list" data-query="huairou">怀柔</li>
+                        <li class="list" data-query="yanqing">延庆</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_three">
+                <li class="filter_title">
+                    排名筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0:50">1-50</li>
+                        <li class="list" data-query="50:100">51-100</li>
+                        <li class="list_text">自定义排名范围：</li>
+                        <li class="list_range"><input type="text" class="range_start"> - <input type="text" class="range_end" disabled><span class="filter_range" style="display:inline-block; margin-left:10px;">确定</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_four">
+                <li class="filter_title">
+                    筛选条件：
+                </li>
+                <li class="filter_content">
+                </li>
+            </ul>
+        </article>
+        <article class="rank">
+            <div class="rank_head"><span></span>北京市文创企业综合信用分排行榜</div>
+            <div class="rank_body">
+                <ul class="rank_title">
+                    <li class="rank_title_left">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">综合信用得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                    <li class="rank_title_right">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">综合信用得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                </ul>
+                <ul class="rank_data">
+                    <li class="data_box rank_left">
+                    </li>
+                    <li class="data_box rank_right">
+                    </li>
+                    <div class="data-no"></div>
+                </ul>
+            </div>
+        </article>
+        </div>
+        
+        <div id="operationalEfficiency" class="tab-filter" style="display:none;">
+        <article class="filter">
+            <div class="filter_select_box">
+                <span class="filter_title">
+                    统计年度：
+                </span>
+                <select class="years filter_select">
+                </select>
+            </div>
+            <ul class="filter_one">
+                <li class="filter_title">
+                    行业筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0">文化艺术</li>
+                        <li class="list" data-query="1">新闻出版</li>
+                        <li class="list" data-query="2">广播电视电影</li>
+                        <li class="list" data-query="3">软件网络及计算机服务</li>
+                        <li class="list" data-query="4">广告会展</li>
+                        <li class="list" data-query="5">艺术品交易</li>
+                        <li class="list" data-query="6">设计服务</li>
+                        <li class="list" data-query="7">旅游休闲娱乐</li>
+                        <li class="list" data-query="8">其它辅助服务</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_two">
+                <li class="filter_title">
+                    地区筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="dongcheng">东城</li>
+                        <li class="list" data-query="xicheng">西城</li>
+                        <li class="list" data-query="chaoyang">朝阳</li>
+                        <li class="list" data-query="fengtai">丰台</li>
+                        <li class="list" data-query="shijingshan">石景山</li>
+                        <li class="list" data-query="haidian">海淀</li>
+                        <li class="list" data-query="shunyi">顺义</li>
+                        <li class="list" data-query="tongzhou">通州</li>
+                        <li class="list" data-query="daxing">大兴</li>
+                        <li class="list" data-query="fangshan">房山</li>
+                        <li class="list" data-query="mentougou">门头沟</li>
+                        <li class="list" data-query="changping">昌平</li>
+                        <li class="list" data-query="pinggu">平谷</li>
+                        <li class="list" data-query="miyun">密云</li>
+                        <li class="list" data-query="huairou">怀柔</li>
+                        <li class="list" data-query="yanqing">延庆</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_three">
+                <li class="filter_title">
+                    排名筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0:50">1-50</li>
+                        <li class="list" data-query="50:100">51-100</li>
+                        <li class="list_text">自定义排名范围：</li>
+                        <li class="list_range"><input type="text" class="range_start">&nbsp;-&nbsp;<input type="text" class="range_end" disabled><span class="filter_range" style="display:inline-block; margin-left:10px;">确定</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_four">
+                <li class="filter_title">
+                    筛选条件：
+                </li>
+                <li class="filter_content">
+                </li>
+            </ul>
+        </article>
+        <article class="rank">
+            <div class="rank_head"><span></span>北京市文创企业经营效率排行榜</div>
+            <div class="rank_body">
+                <ul class="rank_title">
+                    <li class="rank_title_left">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">经营效率得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                    <li class="rank_title_right">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">经营效率得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                </ul>
+                <ul class="rank_data">
+                    <li class="data_box rank_left">
+                    </li>
+                    <li class="data_box rank_right">
+                    </li>
+                    <div class="data-no"></div>
+                </ul>
+            </div>
+        </article>
+        </div>
+        
+        <div id="developmentStatus" class="tab-filter" style="display:none;">
+        <article class="filter">
+            <div class="filter_select_box">
+                <span class="filter_title">
+                    统计年度：
+                </span>
+                <select class="years filter_select">
+                </select>
+            </div>
+            <ul class="filter_one">
+                <li class="filter_title">
+                    行业筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0">文化艺术</li>
+                        <li class="list" data-query="1">新闻出版</li>
+                        <li class="list" data-query="2">广播电视电影</li>
+                        <li class="list" data-query="3">软件网络及计算机服务</li>
+                        <li class="list" data-query="4">广告会展</li>
+                        <li class="list" data-query="5">艺术品交易</li>
+                        <li class="list" data-query="6">设计服务</li>
+                        <li class="list" data-query="7">旅游休闲娱乐</li>
+                        <li class="list" data-query="8">其它辅助服务</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_two">
+                <li class="filter_title">
+                    地区筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="dongcheng">东城</li>
+                        <li class="list" data-query="xicheng">西城</li>
+                        <li class="list" data-query="chaoyang">朝阳</li>
+                        <li class="list" data-query="fengtai">丰台</li>
+                        <li class="list" data-query="shijingshan">石景山</li>
+                        <li class="list" data-query="haidian">海淀</li>
+                        <li class="list" data-query="shunyi">顺义</li>
+                        <li class="list" data-query="tongzhou">通州</li>
+                        <li class="list" data-query="daxing">大兴</li>
+                        <li class="list" data-query="fangshan">房山</li>
+                        <li class="list" data-query="mentougou">门头沟</li>
+                        <li class="list" data-query="changping">昌平</li>
+                        <li class="list" data-query="pinggu">平谷</li>
+                        <li class="list" data-query="miyun">密云</li>
+                        <li class="list" data-query="huairou">怀柔</li>
+                        <li class="list" data-query="yanqing">延庆</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_three">
+                <li class="filter_title">
+                    排名筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0:50">1-50</li>
+                        <li class="list" data-query="50:100">51-100</li>
+                        <li class="list_text">自定义排名范围：</li>
+                        <li class="list_range"><input type="text" class="range_start">&nbsp;-&nbsp;<input type="text" class="range_end" disabled><span class="filter_range" style="display:inline-block; margin-left:10px;">确定</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_four">
+                <li class="filter_title">
+                    筛选条件：
+                </li>
+                <li class="filter_content">
+                </li>
+            </ul>
+        </article>
+        <article class="rank">
+            <div class="rank_head"><span></span>北京市文创企业发展状况排行榜</div>
+            <div class="rank_body">
+                <ul class="rank_title">
+                    <li class="rank_title_left">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">发展状况得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                    <li class="rank_title_right">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">发展状况得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                </ul>
+                <ul class="rank_data">
+                    <li class="data_box rank_left">
+                    </li>
+                    <li class="data_box rank_right">
+                    </li>
+                    <div class="data-no"></div>
+                </ul>
+            </div>
+        </article>
+        </div>
+        
+        <div id="profitability" class="tab-filter" style="display:none;">
+        <article class="filter">
+            <div class="filter_select_box">
+                <span class="filter_title">
+                    统计年度：
+                </span>
+                <select class="years filter_select">
+                </select>
+            </div>
+            <ul class="filter_one">
+                <li class="filter_title">
+                    行业筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0">文化艺术</li>
+                        <li class="list" data-query="1">新闻出版</li>
+                        <li class="list" data-query="2">广播电视电影</li>
+                        <li class="list" data-query="3">软件网络及计算机服务</li>
+                        <li class="list" data-query="4">广告会展</li>
+                        <li class="list" data-query="5">艺术品交易</li>
+                        <li class="list" data-query="6">设计服务</li>
+                        <li class="list" data-query="7">旅游休闲娱乐</li>
+                        <li class="list" data-query="8">其它辅助服务</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_two">
+                <li class="filter_title">
+                    地区筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="dongcheng">东城</li>
+                        <li class="list" data-query="xicheng">西城</li>
+                        <li class="list" data-query="chaoyang">朝阳</li>
+                        <li class="list" data-query="fengtai">丰台</li>
+                        <li class="list" data-query="shijingshan">石景山</li>
+                        <li class="list" data-query="haidian">海淀</li>
+                        <li class="list" data-query="shunyi">顺义</li>
+                        <li class="list" data-query="tongzhou">通州</li>
+                        <li class="list" data-query="daxing">大兴</li>
+                        <li class="list" data-query="fangshan">房山</li>
+                        <li class="list" data-query="mentougou">门头沟</li>
+                        <li class="list" data-query="changping">昌平</li>
+                        <li class="list" data-query="pinggu">平谷</li>
+                        <li class="list" data-query="miyun">密云</li>
+                        <li class="list" data-query="huairou">怀柔</li>
+                        <li class="list" data-query="yanqing">延庆</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_three">
+                <li class="filter_title">
+                    排名筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0:50">1-50</li>
+                        <li class="list" data-query="50:100">51-100</li>
+                        <li class="list_text">自定义排名范围：</li>
+                        <li class="list_range"><input type="text" class="range_start">&nbsp;-&nbsp;<input type="text" class="range_end" disabled><span class="filter_range" style="display:inline-block; margin-left:10px;">确定</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_four">
+                <li class="filter_title">
+                    筛选条件：
+                </li>
+                <li class="filter_content">
+                </li>
+            </ul>
+        </article>
+        <article class="rank">
+            <div class="rank_head"><span></span>北京市文创企业盈利能力排行榜</div>
+            <div class="rank_body">
+                <ul class="rank_title">
+                    <li class="rank_title_left">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">盈利能力得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                    <li class="rank_title_right">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">盈利能力得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                </ul>
+                <ul class="rank_data">
+                    <li class="data_box rank_left">
+                    </li>
+                    <li class="data_box rank_right">
+                    </li>
+                    <div class="data-no"></div>
+                </ul>
+            </div>
+        </article>
+        </div>
+        
+        <div id="debtLevelsAndSolvency" class="tab-filter" style="display:none;">
+        <article class="filter">
+            <div class="filter_select_box">
+                <span class="filter_title">
+                    统计年度：
+                </span>
+                <select class="years filter_select">
+                </select>
+            </div>
+            <ul class="filter_one">
+                <li class="filter_title">
+                    行业筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0">文化艺术</li>
+                        <li class="list" data-query="1">新闻出版</li>
+                        <li class="list" data-query="2">广播电视电影</li>
+                        <li class="list" data-query="3">软件网络及计算机服务</li>
+                        <li class="list" data-query="4">广告会展</li>
+                        <li class="list" data-query="5">艺术品交易</li>
+                        <li class="list" data-query="6">设计服务</li>
+                        <li class="list" data-query="7">旅游休闲娱乐</li>
+                        <li class="list" data-query="8">其它辅助服务</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_two">
+                <li class="filter_title">
+                    地区筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="dongcheng">东城</li>
+                        <li class="list" data-query="xicheng">西城</li>
+                        <li class="list" data-query="chaoyang">朝阳</li>
+                        <li class="list" data-query="fengtai">丰台</li>
+                        <li class="list" data-query="shijingshan">石景山</li>
+                        <li class="list" data-query="haidian">海淀</li>
+                        <li class="list" data-query="shunyi">顺义</li>
+                        <li class="list" data-query="tongzhou">通州</li>
+                        <li class="list" data-query="daxing">大兴</li>
+                        <li class="list" data-query="fangshan">房山</li>
+                        <li class="list" data-query="mentougou">门头沟</li>
+                        <li class="list" data-query="changping">昌平</li>
+                        <li class="list" data-query="pinggu">平谷</li>
+                        <li class="list" data-query="miyun">密云</li>
+                        <li class="list" data-query="huairou">怀柔</li>
+                        <li class="list" data-query="yanqing">延庆</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_three">
+                <li class="filter_title">
+                    排名筛选：
+                </li>
+                <li class="filter_content">
+                    <span class="filter_one_all">全部</span>
+                    <ul class="filter_lists">
+                        <li class="list" data-query="0:50">1-50</li>
+                        <li class="list" data-query="50:100">51-100</li>
+                        <li class="list_text">自定义排名范围：</li>
+                        <li class="list_range"><input type="text" class="range_start">&nbsp;-&nbsp;<input type="text" class="range_end" disabled><span class="filter_range" style="display:inline-block; margin-left:10px;">确定</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter_four">
+                <li class="filter_title">
+                    筛选条件：
+                </li>
+                <li class="filter_content">
+                </li>
+            </ul>
+        </article>
+        <article class="rank">
+            <div class="rank_head"><span></span>北京市文创企业负债水平和偿债能力排行榜</div>
+            <div class="rank_body">
+                <ul class="rank_title">
+                    <li class="rank_title_left">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">负债水平和偿债能力得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                    <li class="rank_title_right">
+                        <span class="number">排名</span>
+                        <span class="name">企业名称</span>
+                        <span class="marks">负债水平和偿债能力得分</span>
+                        <span class="percentage">信用分百分比</span>
+                    </li>
+                </ul>
+                <ul class="rank_data">
+                    <li class="data_box rank_left">
+                    </li>
+                    <li class="data_box rank_right">
+                    </li>
+                    <div class="data-no"></div>
+                </ul>
+            </div>
+        </article>
+        </div>
+    </article>
+</section>
+
+<footer class="footer">
+    <p class="footer_text">承建单位：北京文投大数据有限公司、联合信用征信股份有限公司</p>
+</footer>
+<script src="../../asserts/jquery-3.3.1.min.js"></script>
+<script src="../../asserts/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="../../asserts/layui/layui.all.js"></script>-->
+<script src="../../asserts/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../../asserts/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/company_select.js"></script>
+</body>
+</html>

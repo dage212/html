@@ -1,0 +1,246 @@
+.exhi_head {
+  width: 100%;
+  height: 56px;
+}
+.exhibition {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+.exhi_head {
+  font-size: 16px;
+  color: #333333;
+  text-align: left;
+  font-weight: bold;
+}
+.exhibition_1 {
+  width: 450px;
+  background: #fff;
+  padding: 20px;
+}
+.exhibition_1 .total_monitor {
+  color: #eb2c2c;
+  font-weight: normal;
+}
+.exhibition_1 .jia {
+  font-weight: normal;
+}
+.exhibition_2 {
+  width: 280px;
+  background: #fff;
+  padding: 20px;
+}
+.exhibition_2 .block_1 {
+  padding: 10px 0px 10px 30px;
+  height: 40px;
+}
+.exhibition_2 .block_1 .total_monitor {
+  color: #eb2c2c;
+  font-weight: normal;
+}
+.exhibition_2 .text_1 {
+  float: left;
+  color: #333333;
+}
+.exhibition_2 .text_2 {
+  float: right;
+}
+.exhibition_3 {
+  width: 450px;
+  background: #fff;
+  padding: 20px;
+}
+.exhibition_3 .update_time {
+  font-size: 12px;
+}
+.exhibition_3 .block_1 {
+  padding: 10px 30px 10px 30px;
+  height: 40px;
+}
+.exhibition_3 .block_1 .total_monitor {
+  color: #eb2c2c;
+  font-weight: normal;
+}
+.exhibition_3 .text_1 {
+  float: left;
+  color: #333333;
+}
+.exhibition_3 .text_2 {
+  float: right;
+}
+.filter_data_head {
+  line-height: 18px;
+  width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+.filter_data_head .filter_head_title {
+  float: left;
+}
+.filter_data_head .filter_head_img {
+  margin-top: 3px;
+  margin-right: 6px;
+  float: left;
+}
+.filter_data_head .filter_page,
+.filter_data_head .filter_dec {
+  float: right;
+  margin-left: 10px;
+}
+.filter_data_head .page_current {
+  color: #139EED;
+}
+/*过滤表格头部*/
+.filter_data_head {
+  line-height: 18px;
+  width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+.filter_data_head .filter_head_title {
+  float: left;
+}
+.filter_data_head .filter_head_img {
+  margin-top: 3px;
+  margin-right: 6px;
+  float: left;
+}
+.filter_data_head .filter_page,
+.filter_data_head .filter_dec {
+  float: right;
+  margin-left: 10px;
+}
+.filter_data_head .page_current {
+  color: #139EED;
+}
+/*过滤表格*/
+.filter_data {
+  width: 1200px;
+  background: #fff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 16px;
+}
+.bootstrap-table .text-center {
+  vertical-align: middle!important;
+}
+.bootstrap-table .th-inner {
+  color: #333333;
+  text-align: center;
+}
+.bootstrap-table .fixed-table-container {
+  border-radius: 0px;
+}
+.bootstrap-table .pagination-detail {
+  color: #999999;
+}
+.bootstrap-table .page-list .btn {
+  padding: 0px 8px;
+  color: #666666;
+  border-radius: 0px;
+}
+.bootstrap-table .page-list .btn .page-size {
+  color: #666666!important;
+}
+.bootstrap-table .table {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.bootstrap-table .fixed-table-container {
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.bootstrap-table .fixed-table-pagination .pull-right {
+  margin-top: 20px!important;
+}
+.bootstrap-table .fixed-table-pagination .pull-right a {
+  padding: 4px 9px;
+  border-radius: 0px;
+}
+.comp-name {
+  color: #1c95d5;
+  vertical-align: middle!important;
+}
+.red_type {
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  margin: 0 auto;
+  background: #eb2c2c;
+}
+.blue_type {
+  background: #3eb7e4;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  margin: 0 auto;
+}
+.orange_type {
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  margin: 0 auto;
+  background: #f08d00;
+}
+.yellow_type {
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  margin: 0 auto;
+  background: #efe707;
+}
+.warning_type_box .text {
+  float: left;
+  line-height: 46px;
+}
+.warning_type_box .warning_type {
+  float: left;
+  color: #024dc9;
+  line-height: 46px;
+  margin-left: 16px;
+  position: relative;
+}
+.warning_type_box .warning_type .circle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: red;
+  color: #333;
+  top: 4px;
+  right: -8px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 14px;
+  color: #fff;
+  border-radius: 50%;
+}
+.grade {
+  position: relative;
+}
+.grade div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,110 @@
+/*本页面单独css*/
+
+
+//tab切换
+.filter_tab{
+  width:1200px;
+  background:#fff;
+  margin:0 auto;
+  margin-bottom:10px;
+  height:50px;
+  font-size:16px;
+  text-align:center;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-flow: row nowrap;
+  .line{
+    width:1px;
+    height:20px;
+    background:#999999;
+    margin-top:1px;
+  }
+  .filter_tab_bottom{
+    height:16px;
+  }
+  .filter_tab_bottom img{
+    height:10px;
+    display:none;
+  }
+  .tab_box:first-child img{
+    display: inline-block;
+  }
+
+  .filter_tab_top{
+    margin-top:6px;
+    height:22px;
+    width:204px;
+    line-height:26px;
+    cursor:pointer;
+  }
+  .tab_box:last-child .filter_tab_top{
+    border-right:0px;
+  }
+}
+
+//form表单
+.form_box{
+  width:1200px;
+  margin:0 auto;
+  background:#fff;
+  height:380px;
+  overflow:hidden;
+}
+.form_container{
+  width:690px;
+  margin:0 auto;
+}
+.form_container:nth-child(2){
+  .form_list:nth-of-type(2){
+    margin-left:63px;
+  }
+  .form_list:nth-child(1){
+    margin-left:46px;
+  }
+}
+.form_list:nth-child(1),.form_list:nth-child(2){
+  margin-left:32px;
+}
+
+.form_list{
+  .red{
+    color:red;
+    margin-right:5px;
+  }
+  height:40px;
+  margin-top:40px;
+  input{
+    width:360px;
+    height:40px;
+    border:1px solid #b7b7b7;
+    padding:0 5px;
+    margin-left:14px;
+    margin-right:14px;
+    color:#999999;
+  }
+  span{
+    color:#999999;
+  }
+}
+label{
+  color:#333333;
+  font-size:16px;
+  font-weight: normal;
+  line-height:40px;
+}
+.user_button,.password_button{
+  width:200px;
+  height:50px;
+  background:#4990e2;
+  text-align:center;
+  line-height:50px;
+  color:#fff;
+  font-size:14px;
+  border-radius:4px;
+  border:0px;
+  margin-left:170px;
+}
+
+.form_list .form_tip{color: #f00;}

@@ -1,0 +1,132 @@
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: " ";
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+ *zoom: 1;
+}
+.index-menu {
+	width: 1200px;
+	margin: 0 auto;
+}
+.menu-box {
+	margin-top: 10px;
+	background-color: #fff;
+	box-shadow: 0 3px 5px 0 #d8dcdf;
+}
+.menu-box .menu-img {
+	width: 210px;
+	height: 100%;
+}
+.menu-box .menu-txt {
+	width: 155px;
+	margin-top: 50px;
+	color: #06588a;
+}
+.menu-box .menu-txt h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.menu-box .menu-txt p {
+	margin: 20px 0;
+}
+.menu-box .menu-txt p.p-line {
+	margin: 30px 0;
+}
+.menu-box .menu-txt a {
+	display: block;
+	width: 138px;
+	height: 28px;
+	border: 1px solid #1187d0;
+	border-radius: 3px;
+	line-height: 24px;
+	text-align: center;
+}
+.menu-xycx {
+	height: 170px;
+	width: 1200px;
+}
+.menu-xycx .menu-img {
+	background: url(../images/index-xycx.png) no-repeat 45px center;
+}
+.menu-xycx .menu-txt {
+	width: 245px;
+	margin: 30px 50px 0 0;
+	font-size: 16px;
+	line-height: 30px;
+}
+.menu-xycx .xycx-form {
+	margin-top: 20px;
+	color: #06588a;
+}
+.xycx-form h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.xycx-form .xycx-ipt {
+	width: 624px;
+	border: 2px solid #097abf;
+	line-height: 40px;
+}
+.xycx-form .xycx-ipt .input {
+	float: left;
+	width: 550px;
+	height: 40px;
+	border: none;
+	padding: 0 10px;
+}
+.xycx-form .xycx-ipt .button {
+	float: left;
+	width: 70px;
+	height: 40px;
+	background: url(../images/icon-search.png) no-repeat center center #097abf;
+	border: none;
+}
+.menu-hymd {
+	height: 280px;
+	width: 390px;
+	margin-right: 10px;
+}
+.menu-hymd .menu-img {
+	background: url(../images/index-hymd.png) no-repeat 45px center;
+}
+.menu-jkgz {
+	height: 280px;
+	width: 800px;
+}
+.menu-jkgz .menu-img {
+	width: 450px;
+	background: url(../images/index-jkgz.png) no-repeat 45px center;
+}
+.menu-xytj {
+	height: 280px;
+	width: 390px;
+	margin-right: 10px;
+}
+.menu-xytj .menu-img {
+	background: url(../images/index-xytj.png) no-repeat 45px center;
+}
+.menu-qyyx {
+	height: 280px;
+	width: 395px;
+	margin-right: 10px;
+}
+.menu-qyyx .menu-img {
+	background: url(../images/index-qyyx.png) no-repeat 45px center;
+}
+.menu-xydt {
+	height: 280px;
+	width: 395px;
+}
+.menu-xydt .menu-img {
+	background: url(../images/index-xydt.png) no-repeat 45px center;
+}

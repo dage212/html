@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监控跟踪</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asserts/bootstrap-table/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../css/important_things.css">
+</head>
+<body>
+<script src="../js/http.js"></script>
+<header class="header">
+    <div class="head_box">
+        <div class="head_logo"><span>北京市文创企业信用服务平台</span></div>
+        <ul class="head_menu">
+            <li ><a href="../../home.html">首页</a></li>
+            <li><a href="./info_search.html">信用查询</a></li>
+            <li><a href="./company_list.html">行业名单</a></li>
+            <li class=" monitor_menu active">
+                <a href="javascript:void(0)">监控跟踪&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./monitor_follow.html">监控概览</a></li>
+                    <li class="menu_list"><a href="./important_things.html">重大事项</a></li>
+                    <li class="menu_list"><a href="./monitor_list.html">监控名单</a></li>
+                </ul>
+            </li>
+            <li class="infor_menu ">
+                <a href="#">信用统计&nbsp;<img src="../images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./credit_statistics.html">统计概况</a></li>
+                    <li class="menu_list"><a href="./credit_score.html">评分分布</a></li>
+                </ul>
+            </li>
+            <li ><a href="./company_select.html">企业优选</a></li>
+            <li ><a href="./credit_map.html">信用地图</a></li>
+        </ul>
+        <ul class="login_out">
+            <li><a href="./user_sys.html"><img class="login_png" src="../images/user.png" /></a></li>
+            <li><a href="#"><img class="logout_png" src="../images/quit.png"/></a></li>
+        </ul>
+    </div>
+</header>
+<section class="section">
+    <nav class="bread">
+        <span class="crumb_one">当前位置</span>&nbsp;:&nbsp;<a class="crumb_two" href="#">首页</a>&nbsp;>&nbsp;<a class="crumb_three" href="#">重大事项</a>
+    </nav>
+    <article class="filter">
+        <div class="input_text">
+            <div class="filter_input_box">
+                <input type="text" placeholder="请输入企业名称关键字进行搜索">
+                <img src="../images/X.png" alt="" class="filter_x">
+            </div>
+            <div class="filter_button">
+                搜索
+            </div>
+        </div>
+        <ul class="filter_one">
+            <li class="filter_title">
+                企业类型：
+            </li>
+            <li class="filter_content">
+                <span class="filter_one_all">全部</span>
+                <ul class="filter_lists">
+                    <li class="list">文化艺术</li>
+                    <li class="list">新闻出版</li>
+                    <li class="list">广播电视电影</li>
+                    <li class="list">软件网络及计算机服务</li>
+                    <li class="list">广告会展</li>
+                    <li class="list">艺术品交易</li>
+                    <li class="list">设计服务</li>
+                    <li class="list">旅游休闲娱乐</li>
+                    <li class="list">其它辅助服务</li>
+                    <li class="list">未分类</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="filter_two">
+            <li class="filter_title">
+                所在地区：
+            </li>
+            <li class="filter_content">
+                <span class="filter_one_all">全部</span>
+                <ul class="filter_lists">
+                    <li class="list">东城</li>
+                    <li class="list">西城</li>
+                    <li class="list">朝阳</li>
+                    <li class="list">丰台</li>
+                    <li class="list">石景山</li>
+                    <li class="list">海淀</li>
+                    <li class="list">顺义</li>
+                    <li class="list">通州</li>
+                    <li class="list">大兴</li>
+                    <li class="list">房山</li>
+                    <li class="list">门头沟</li>
+                    <li class="list">昌平</li>
+                    <li class="list">平谷</li>
+                    <li class="list">密云</li>
+                    <li class="list">怀柔</li>
+                    <li class="list">延庆</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="filter_three">
+            <li class="filter_title">
+                成立日期：
+            </li>
+            <li class="filter_content">
+                <span class="filter_one_all">全部</span>
+                <ul class="filter_lists">
+                    <li class="list">1年以内</li>
+                    <li class="list">1~3年</li>
+                    <li class="list">3~5年</li>
+                    <li class="list">5~7年</li>
+                    <li class="list">7年以上</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="filter_four">
+            <li class="filter_title">
+                筛选条件：
+            </li>
+            <li class="filter_content">
+                <span class="filter_one_all">文化艺术<span class="glyphicon glyphicon-remove quit"></span></span>
+                <span class="filter_one_all">文化艺术<span class="glyphicon glyphicon-remove quit"></span></span>
+            </li>
+        </ul>
+    </article>
+    <article class="filter_data_head">
+        <img src="../images/list.png" alt="" class="filter_head_img">
+        <span class="filter_head_title">最新预警列表</span>
+        <!--<span class="filter_dec"><></span>
+        <span class="filter_page"><span class="page_current">1</span>/<span class="page_total">2</span></span>-->
+    </article>
+    <article class="filter_data">
+        <!--<table id="filter-table"></table>-->
+        <table class="table table-bordered tab_table_3 fzjg_table">
+            <tr>
+                <td style="text-align: center;height:50px;vertical-align: middle;background:#f6f8fa;">序号</td>
+                <td style="text-align: center;vertical-align: middle;background:#f6f8fa;">企业名称</td>
+                <td style="text-align: center;vertical-align: middle;background:#f6f8fa;">最新预警时间</td>
+                <td style="text-align: center;vertical-align: middle;background:#f6f8fa;">主体预警等级</td>
+                <td style="vertical-align: middle;text-align:center;background:#f6f8fa;">重大事项预警</td>
+                <td style="vertical-align: middle;text-align:center;background:#f6f8fa;">提示事项</td>
+                <td style="vertical-align: middle;text-align:center;background:#f6f8fa;">操作</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">1</td>
+                <td style="vertical-align:middle;">北京艺网文化有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="red_type" >红色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业分支机构变动</td>
+                <td style="vertical-align: middle;text-align:center;">企业分支机构</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">2</td>
+                <td style="vertical-align:middle;">北京尚福乐文化有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td style="vertical-align: middle;text-align:center;">
+                    <div class="red_type" >红色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业对外投资变动</td>
+                <td style="vertical-align: middle;text-align:center;">企业对外投资</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">3</td>
+                <td style="vertical-align:middle;">北京哆咪文化艺术有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="red_type" >红色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业注册地址变更</td>
+                <td style="vertical-align: middle;text-align:center;">企业注册地址</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">4</td>
+                <td style="vertical-align:middle;">北京新华畅想文化有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="red_type" >红色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业股东变更</td>
+                <td style="vertical-align: middle;text-align:center;">企业股东</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">5</td>
+                <td style="vertical-align:middle;">北京息壤传媒文化有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="orange_type" >橙色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业经营范围变更</td>
+                <td style="vertical-align: middle;text-align:center;">企业经营范围</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">6</td>
+                <td style="vertical-align:middle;">北京火红年代影视文化传播有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="orange_type" >橙色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业高级管理层变动</td>
+                <td style="vertical-align: middle;text-align:center;">高级管理层</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">7</td>
+                <td style="vertical-align:middle;">北京恒盛昌隆文化发展有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="orange_type" >橙色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业经营范围变更</td>
+                <td style="vertical-align: middle;text-align:center;">企业经营范围</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">8</td>
+                <td style="vertical-align:middle;">北京中藏联合文化发展有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="orange_type" >橙色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业股东变更</td>
+                <td style="vertical-align: middle;text-align:center;">企业股东</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">9</td>
+                <td style="vertical-align:middle;">北京国筝文化传媒有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="yellow_type" >黄色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业法定代表人变更</td>
+                <td style="vertical-align: middle;text-align:center;">法人变更</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;vertical-align:middle;">10</td>
+                <td style="vertical-align:middle;">北京时尚派格文化传播有限公司</td>
+                <td style="vertical-align: middle;text-align:center;">2018-3-12</td>
+                <td >
+                    <div class="yellow_type" >黄色预警</div>
+                </td>
+                <td style="vertical-align: middle;text-align:center;">企业分支机构变动</td>
+                <td style="vertical-align: middle;text-align:center;">企业分支机构</td>
+                <td style="vertical-align: middle;text-align:center;"><a href="./monitor_article.html">查看详情</a></td>
+            </tr>
+        </table>
+    </article>
+</section>
+<footer class="footer">
+    <p class="footer_text">承建单位：北京文投大数据有限公司、联合信用征信股份有限公司</p>
+</footer>
+<script src="../../asserts/jquery-3.3.1.min.js"></script>
+<script src="../../asserts/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="../../asserts/layui/layui.all.js"></script>-->
+<script src="../../asserts/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../../asserts/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/important_things.js"></script>
+</body>
+</html>

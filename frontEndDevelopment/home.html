@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./platform/css/common.css">
+    <link rel="stylesheet" href="asserts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./platform/css/index.css">
+</head>
+
+<body>
+<script src="./platform/js/http.js"></script>
+<header class="header">
+    <div class="head_box">
+        <div class="head_logo"><span>北京市文创企业信用服务平台</span></div>
+        <ul class="head_menu">
+            <li class="active"><a href="./home.html">首页</a></li>
+            <li ><a href="./platform/tpl/info_search.html">信用查询</a></li>
+            <li><a href="./platform/tpl/company_list.html">行业名单</a></li>
+            <li class=" monitor_menu ">
+                <a href="javascript:void(0)">监控跟踪&nbsp;<img src="./platform/images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./platform/tpl/monitor_follow.html">监控概览</a></li>
+                    <li class="menu_list"><a href="./platform/tpl/important_things.html">重大事项</a></li>
+                    <li class="menu_list"><a href="./platform/tpl/monitor_list.html">监控名单</a></li>
+                </ul>
+            </li>
+            <li class="infor_menu ">
+                <a href="#">信用统计&nbsp;<img src="./platform/images/down.png"/></a>
+                <ul class="menu_down" >
+                    <li class="menu_list"><a href="./platform/tpl/credit_statistics.html">统计概况</a></li>
+                    <li class="menu_list"><a href="./platform/tpl/credit_score.html">评分分布</a></li>
+                </ul>
+            </li>
+            <li ><a href="./platform/tpl/company_select.html">企业优选</a></li>
+            <li ><a href="./platform/tpl/credit_map.html">信用地图</a></li>
+        </ul>
+        <ul class="login_out">
+            <li><a href="./platform/tpl/user_sys.html"><img class="login_png" src="./platform/images/user.png" /></a></li>
+            <li><a href="#"><img class="logout_png" src="./platform/images/quit.png"/></a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="section">
+	<article class="index-menu clearfix">
+    	<div class="menu-box menu-xycx fl">
+        	<div class="menu-img fl"></div>
+            <div class="menu-txt fl">
+            	<p>涵盖北京市全量文创企业信用信息实时查询企业信用信息</p>
+            </div>
+            <div class="xycx-form fl">
+            	<h2>信用查询</h2>
+              	<div class="xycx-ipt clearfix">
+              		<input type="text" class="input search_input">
+                    <input type="submit" class="button search_button" value="">
+              	</div>
+            </div>
+        </div>
+    	<div class="menu-box menu-hymd fl">
+        	<div class="menu-img fl"></div>
+            <div class="menu-txt fl">
+            	<h2>行业名单</h2>
+            	<p class="p-line">实时公布行业各类名单</p>
+                <div><a href="platform/tpl/company_list.html">点击进入</a></div>
+            </div>
+        </div>
+    	<div class="menu-box menu-jkgz fl">
+        	<div class="menu-img fl"></div>
+            <div class="menu-txt fl">
+            	<h2>监控跟踪</h2>
+            	<p>实时跟踪企业各类信息，发送预警邮件</p>
+                <div><a href="platform/tpl/monitor_follow.html">点击进入</a></div>
+            </div>
+        </div>
+    	<div class="menu-box menu-xytj fl">
+        	<div class="menu-img fl"></div>
+            <div class="menu-txt fl">
+            	<h2>信用统计</h2>
+            	<p>分地区、分行业统计企业各维度信用指标</p>
+                <div><a href="platform/tpl/credit_statistics.html">点击进入</a></div>
+            </div>
+        </div>
+    	<div class="menu-box menu-qyyx fl">
+        	<div class="menu-img fl"></div>
+            <div class="menu-txt fl">
+            	<h2>企业优选</h2>
+            	<p>从区域、行业的角度分类按特定维度给企业排序</p>
+                <div><a href="platform/tpl/company_select.html">点击进入</a></div>
+            </div>
+        </div>
+    	<div class="menu-box menu-xydt fl">
+        	<div class="menu-img fl"></div>
+            <div class="menu-txt fl">
+            	<h2>信用地图</h2>
+            	<p class="p-line">直观展示企业热力图</p>
+                <div><a href="platform/tpl/credit_map.html">点击进入</a></div>
+            </div>
+        </div>
+    </article>
+</section>
+<footer class="footer">
+<p class="footer_text">承建单位：北京文投大数据有限公司、联合信用征信股份有限公司</p>
+</footer>
+<script src="asserts/jquery-3.3.1.min.js"></script>
+<script src="asserts/bootstrap/js/bootstrap.min.js"></script>
+<script src="platform/js/common.js"></script>
+<script>
+    //查询
+    $(".search_input").keydown(function(e){
+        if(e.which == 13){
+            var params = $(".search_input").val()
+            window.location.href="./platform/tpl/info_search.html?search="+params
+        }
+    })
+    $(".search_button").click(function(){
+        var params = $(".search_input").val()
+        window.location.href="./platform/tpl/info_search.html?search="+params
+    })
+</script>
+</body>
+</html>
